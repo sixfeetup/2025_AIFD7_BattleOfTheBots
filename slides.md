@@ -62,7 +62,7 @@ An AI agent is a system that can:
 
 ---
 
-# Agents Continued {data-background="images/5.png"}
+# Agents Continued {data-background="images/4.png"}
 
 Key characteristics:
 
@@ -75,7 +75,7 @@ Key characteristics:
 
 # What is MCP? {data-background="images/6.png"}
 
-![](images/Model%20Context%20Protocol%20Diagram.png){.r-stretch}
+![](images/Model%20Context%20Protocol%20Diagram.png){.r-stretch .r-frame .r-center}
 
 ::: notes
 The Model Context Protocol is an open standard that enables developers to build
@@ -87,20 +87,22 @@ servers.
 
 ---
 
-# MCP Example: AWS API {.r-fit-text data-background="images/8.png"}
+# MCP Examples {data-background="images/8.png"}
 
 - A [suite of specialized MCP servers](https://github.com/awslabs/mcp) for AWS:
-- Saves the cost of having all the AWS docs in your own context
-- In practice:
-  - Connect your AI assistant to AWS MCP servers
-  - Ask natural language questions about AWS services
-  - Get contextually accurate answers based on latest documentation
-  - Generate AWS CLI commands, CloudFormation templates, or IAM policies
-  - Troubleshoot AWS-specific issues with current best practices
+  - Saves the cost of having all the AWS docs in your own context
+- Use [Playwright from your AI Tools](https://github.com/microsoft/playwright-mcp)
+  - Control a browser and grab the context from various web pages
+ 
+---
 
-::: notes
-Microsoft has also released a Playwright MCP server that is fun to play with
-:::
+# In practice {data-background="images/8.png"}
+
+- Connect your AI assistant to AWS MCP servers
+- Ask natural language questions about AWS services
+- Get contextually accurate answers based on latest documentation
+- Generate AWS CLI commands, CloudFormation templates, or IAM policies
+- Troubleshoot AWS-specific issues with current best practices
 
 ---
 
@@ -138,7 +140,7 @@ Microsoft has also released a Playwright MCP server that is fun to play with
 
 # Tool introduction: Goose {.r-fit-text data-background="images/2.png"}
 
- Developed by Block Inc. (formerly Square)
+- Developed by Block Inc. (formerly Square)
 - Open-source ([GitHub: block/goose](https://github.com/block/goose))
 - Supports multiple LLM models (OpenAI, Claude, Ollama)
 - Fully agentic with integrated tooling
@@ -166,13 +168,11 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 ---
 
-# DEMO: The prompt {data-background="images/4.png"}
+# DEMO: The Prompt {data-background="images/4.png"}
 
-This project was bootstrapped with scaf and has a NextJS frontend in the
-`frontend` dir and a Django backend in the `backend` dir.
-
-The scaf template only supports a GraphQL API. Refactor the app to use a REST
-API.
+> This project was bootstrapped with scaf and has a NextJS frontend in the `frontend` dir and a Django backend in the `backend` dir.
+> 
+> The scaf template only supports a GraphQL API. Refactor the app to use a REST API.
 
 ---
 
@@ -225,6 +225,5 @@ API.
 # Talk To Me  {.r-fit-text data-background="images/1.png"}
 
 📩 <calvin@sixfeetup.com>  
-🤝 <https://linkedin.com/in/calvinhp>
-   [@calvinhp](https://x.com/calvinhp)
-🐘 [@calvinhp@fosstodon.org](https://fosstodon.org/@calvinhp)  
+🤝 <https://linkedin.com/in/calvinhp>  
+🦋 [@calvinhp.com](https://bsky.app/profile/calvinhp.com)  
