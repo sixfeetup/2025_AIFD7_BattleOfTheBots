@@ -20,13 +20,6 @@ keywords:
 
 ---
 
-# Why This Matters
-
-- AI coding assistants are transforming how we build software
-- Choosing the right tool can mean the difference between frustration and flow
-- Let’s find out which one delivers for real-world developers!
-
-
 # AI Coding Assistants {.r-fit-text data-background="images/2.png"}
 ## The New Pair-Programming Partners {.r-fit-text}
 
@@ -36,6 +29,15 @@ keywords:
 >
 > -- [Github AI in Software Survey](More than 97% of respondents reported having used AI coding tools at work at some point)
 
+---
+
+# Why This Matters
+
+- AI coding assistants are transforming how we build software
+- Choosing the right tool can mean the difference between frustration and flow
+- Let’s find out which one delivers for real-world developers!
+
+---
 
 # The Contenders {data-background="images/3.png"}
 
@@ -173,12 +175,12 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 # Tool Comparison
 
 | Tool      | Open Source | MCP Support | Agentic | Models Supported       |
-|-----------|-------------|-------------|---------|-----------------------|
-| Aider     | Yes         | No          | Semi    | OpenAI, Claude, Llama |
-| Claude    | No          | Yes         | Full    | Claude 3              |
-| Cursor    | Partial     | Yes         | Full    | OpenAI, Claude        |
-| Goose     | Yes         | Yes         | Full    | OpenAI, Claude, Ollama|
-| Junie     | No          | ?           | Full    | Claude 3 Sonnet       |
+|-----------|-------------|-------------|---------|------------------------|
+| Aider     | Yes         | No          | Semi    | Bring your own         |
+| Claude    | No          | Yes         | Full    | Claude Models          |
+| Cursor    | No          | Yes         | Full    | OpenAI, Claude, Gemini |
+| Goose     | Yes         | Yes         | Full    | Bring your own         |
+| Junie     | No          | No          | Full    | Claude 3.7 Sonnet      |
 
 ---
 
@@ -242,12 +244,6 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 - Use it to help setup those guidelines
 - It will require some serious coaxing in complicated setups (like our demo)
 
-# Talk To Me  {.r-fit-text data-background="images/1.png"}
-
-📩 <calvin@sixfeetup.com>  
-🤝 <https://linkedin.com/in/calvinhp>  
-🦋 [@calvinhp.com](https://bsky.app/profile/calvinhp.com)  
-
 ---
 
 # Key Takeaways
@@ -256,3 +252,11 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 - MCP is enabling richer, more context-aware coding
 - Open source tools are catching up fast
 - Try several and see what fits your style!
+
+---
+
+# Talk To Me  {.r-fit-text data-background="images/1.png"}
+
+📩 <calvin@sixfeetup.com>  
+🤝 <https://linkedin.com/in/calvinhp>  
+🦋 [@calvinhp.com](https://bsky.app/profile/calvinhp.com)  
