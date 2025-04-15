@@ -18,6 +18,14 @@ keywords:
 #### Calvin Hendryx-Parker, CTO
 #### Six Feet Up
 
+---
+
+# Why This Matters
+
+- AI coding assistants are transforming how we build software
+- Choosing the right tool can mean the difference between frustration and flow
+- Let’s find out which one delivers for real-world developers!
+
 
 # AI Coding Assistants {.r-fit-text data-background="images/2.png"}
 ## The New Pair-Programming Partners {.r-fit-text}
@@ -159,6 +167,18 @@ servers.
 ::: notes
 Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 :::
+
+---
+
+# Tool Comparison
+
+| Tool      | Open Source | MCP Support | Agentic | Models Supported       |
+|-----------|-------------|-------------|---------|-----------------------|
+| Aider     | Yes         | No          | Semi    | OpenAI, Claude, Llama |
+| Claude    | No          | Yes         | Full    | Claude 3              |
+| Cursor    | Partial     | Yes         | Full    | OpenAI, Claude        |
+| Goose     | Yes         | Yes         | Full    | OpenAI, Claude, Ollama|
+| Junie     | No          | ?           | Full    | Claude 3 Sonnet       |
 
 ---
 
