@@ -247,3 +247,12 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 📩 <calvin@sixfeetup.com>  
 🤝 <https://linkedin.com/in/calvinhp>  
 🦋 [@calvinhp.com](https://bsky.app/profile/calvinhp.com)  
+
+---
+
+# Key Takeaways
+
+- No single assistant is best for every workflow
+- MCP is enabling richer, more context-aware coding
+- Open source tools are catching up fast
+- Try several and see what fits your style!
