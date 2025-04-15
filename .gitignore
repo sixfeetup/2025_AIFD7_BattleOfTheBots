@@ -29,3 +29,5 @@ index.html
 .npmignore
 gulpfile.js
 .slides.md.swp
+.aider*
+.env
