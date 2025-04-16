@@ -31,7 +31,7 @@ keywords:
 
 ---
 
-# Why This Matters
+# Why This Matters {.r-fit-text data-background="images/9.png"}
 
 - AI coding assistants are transforming how we build software
 - Choosing the right tool can mean the difference between frustration and flow
@@ -172,7 +172,7 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 ---
 
-# Tool Comparison
+# Tool Comparison {.r-fit-text data-background="images/4.png"}
 
 | Tool      | Open Source | MCP Support | Agentic | Models Supported       |
 |-----------|-------------|-------------|---------|------------------------|
@@ -246,7 +246,7 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 ---
 
-# Key Takeaways
+# Key Takeaways {.r-fit-text data-background="images/3.png"}
 
 - No single assistant is best for every workflow
 - MCP is enabling richer, more context-aware coding
