@@ -1,0 +1,856 @@
+# GitHub Search Results: block/goose + "mcp" (created >= 2024-04-01)
+
+**Total Results:** 769
+**Search Query:** repo:block/goose mcp created:>=2024-04-01
+**Generated:** 2025-10-20 20:48:38 UTC
+
+================================================================================
+
+
+## PR #5102: feat(mcp): add support for mcp sampling
+
+- **Type:** Pull Request
+- **State:** open
+- **Created:** 2025-10-09
+- **Updated:** 2025-10-20
+- **Closed:** Not closed
+- **Merged:** Not merged
+- **Labels:** None
+- **Author:** @alexhancock
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/pull/5102
+
+### Description:
+## feature
+
+Adds [MCP sampling](https://modelcontextprotocol.io/specification/2025-06-18/client/sampling) support to goose, so that goose routes requests between extensions and providers when needed. The flow is similar to the below diagram from the MCP docs:
+<img width="814" height="699" alt="Screenshot 2025-10-09 at 5 15 02 PM" src="https://github.com/user-attachments/assets/539cad54-c5d8-4efa-91f7-0697ab8bd706" />
+NOTE: I did not add response review as it seemed like the extension would handle what came back and do with it what it can, and it would be an additional UX speedbump.
+
+## goose specific UX
+
+Added a human-in-the-loop approval flow with a modal that allows the user to confirm or deny the sampling message before it is sent to the llm
+<img width="1611" height="1048" alt="Screenshot 2025-10-09 at 1 45 08 PM" src="https://github.com/user-attachments/assets/76853055-adba-4500-a019-643db5b4e9a7" />
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5261: MCP tools not working
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-19
+- **Updated:** 2025-10-19
+- **Closed:** Not closed
+
+- **Labels:** p2, mcp
+- **Author:** @atlasoft
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/5261
+
+### Description:
+**Describe the bug**
+Persistent error around MCP tools
+```
+-32603: Mcp error: -32602: tool not foundI apologize again for the persistent issue with the `developer__edit_file` tool. I'm unable to directly modify the `main.rs` file.
+```
+```
+-32603: Mcp error: -32602: failed to deserialize parameters: unknown variant `bash`, expected one of `shell`, `batch`, `ruby`, `powershell`
+``` 
+```
+-32603: Mcp error: -32602: failed to deserialize parameters: missing field `language`
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5136: MCP docs Launch Installer Button not working with env variables
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-11
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p3, mcp
+- **Author:** @protoss70
+- **Comments:** 1
+- **URL:** https://github.com/block/goose/issues/5136
+
+### Description:
+**Describe the bug**
+Note: Please check the common issues on https://block.github.io/goose/docs/troubleshooting before filing a report
+I am having a hard time `Launch Installer` button work. I am integrating Apify MCP into Goose MCP registry. For Apify MCP the user needs to provide an env variable `APIFY_TOKEN`. But the `Launch Installer` button doesn't seem to work with env variables.
+**To Reproduce**
+1. Go to `/goose/docs/mcp/asana-mcp`
+2. Click on the `Launch Installer` button
+3. See that it doesn't install the mcp correctly
+4. Go to `/goose/docs/mcp/netlify-mcp`
+5. Press the `Launch Installer` button again
+6. It works, the only difference is that asana MCP has env variable in its launch installer link while netlify doesn't have it
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5107: Support oauth2 authenticated remote MCP servers
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-10
+- **Updated:** 2025-10-14
+- **Closed:** Not closed
+
+- **Labels:** enhancement, p2, mcp
+- **Author:** @alic-mmt
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/5107
+
+### Description:
+**Please explain the motivation behind the feature request.**
+Connecting to a Remote MCP server that requires oauth2 authentication is invoked by Goose with a redirect_uri that appears to use dynamic localhost ports. 
+In doing so, the remote IDP such as Cognito, fails to issue the code, as explicit allowable callback URIs are required. Wildcard port specifiers are not supported.
+As I understand it, Goose must be adhering to the OAuth 2.0 for Native Apps (RFC 8252) spec. which recommends ephemeral/random ports, and binding to loopback, to prevent port squatting or guessing.
+**Describe the solution you'd like**
+My query was more about what out-of-the-box solutions might be possible for supporting oauth2-authenticated remote MCP servers, so that they can be used with the Goose desktop application. 
+**Describe alternatives you've considered**
+ngrok and/or other reverse proxy solutions may provide a workaround but require additional cost/infrastructure deployment, and will not know ahead of time the dynamic port, so are impractical.
+Perhaps Goose could use a custom URI scheme e.g. `goose://oauth-callback` registered with the operating system to invoke it, bypassing the need for `localhost` redirects. I tested in Cognito and these are supported. 
+- [x] I have verified this does not duplicate an existing feature request
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4975: Broken links on the website
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-03
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p2, hacktoberfest, small
+- **Author:** @Better-Boy
+- **Comments:** 5
+- **URL:** https://github.com/block/goose/issues/4975
+
+### Description:
+**Describe the bug**
+The following broken links were found by me when I was trying to learn about using mcp with goose.
+| LinkedFrom | URL |
+|------------|-----|
+| https://block.github.io/goose/docs/mcp/brave-mcp | https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search |
+| https://block.github.io/goose/docs/mcp/browserbase-mcp | https://browserbase.io/dashboard |
+| https://block.github.io/goose/docs/mcp/google-drive-mcp | https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive |
+| https://block.github.io/goose/docs/getting-started/using-extensions | https://github.com/modelcontextprotocol/servers/tree/main/src/github |
+| https://block.github.io/goose/docs/mcp/google-maps-mcp | https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps |
+| https://block.github.io/goose/docs/mcp/puppeteer-mcp | https://github.com/modelcontextprotocol/servers/tree/HEAD/src/puppeteer |
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5259: MCP OAuth refresh_token not used correctly
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-18
+- **Updated:** 2025-10-18
+- **Closed:** Not closed
+
+- **Labels:** p1, mcp
+- **Author:** @ianschenck
+- **Comments:** 0
+- **URL:** https://github.com/block/goose/issues/5259
+
+### Description:
+**Describe the bug**
+Goose in its current state does not (at least reliably?) accept the refresh_token when supplied by the auth server. It does not submit "offline_access" as a scope either, which may be required.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Add an MCP server that follows the spec for auth (OAuth2.1 with DCR)
+2. Wait a few minutes/hours for the access token to expire.
+3. Goose fires off the auth flow again.
+**Expected behavior**
+The refresh_token should be persisted and used to update the access token. The old access token should be thrown away.
+**Screenshots**
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4983: Orca Security MCP Server Extension - Crash
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-03
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p2
+- **Author:** @dolan-security
+- **Comments:** 5
+- **URL:** https://github.com/block/goose/issues/4983
+
+### Description:
+**Describe the bug**
+The Goose desktop application's backend process, `goosed`, crashes consistently within one second of establishing a connection with the Orca Security MCP Server extension. This prevents the extension's tools from being loaded, making the integration unusable. The crash also occurs when the MCP server returns a `401 Unauthorized` error, suggesting an issue with how the application handles authentication failures.
+This is a **regression**, as the integration was fully functional on Goose v1.8.x.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Run the Goose desktop application (v1.9.1).
+2. Configure and enable the Orca Security MCP Server extension, pointing it to a valid server endpoint (in this case, v1.13.0).
+3. Start the Goose application.
+4. The application will appear to start, but the `goosed` backend process will exit silently in the background, making the extension's tools unavailable.
+**Expected behavior**
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4728: 🎃 Hacktoberfest 2025: goose + MCP Videos Hub
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest
+- **Author:** @taniandjerry
+- **Comments:** 4
+- **URL:** https://github.com/block/goose/issues/4728
+
+### Description:
+# Creating goose MCP Integration Videos: "goose with [Your Chosen MCP]"
+## 🚀 Goal
+This is a parent issue for creating short videos (2-3 minutes) showcasing how to connect and use specific MCP (Model Context Protocol) extensions with goose, following our exact template format but featuring MCPs that our team hasn't covered yet.
+## 🤔 Background
+Our team creates videos showing goose integrations with various MCPs (like "goose with GitHub MCP"), but there are many MCPs in the registry we haven't covered yet. Contributors can help expand our video library by creating videos for uncovered MCPs using our proven template format.
+## 🤝 How You Can Contribute
+Choose one of the subtasks below to create a video following our exact template and style, showing how to install, configure, and use an MCP that we haven't made a video about yet.
+## 📹 Available Video Subtasks
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5213: Agents not learning from MCP errors (default plugins)
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-16
+- **Updated:** 2025-10-20
+- **Closed:** Not closed
+
+- **Labels:** mcp
+- **Author:** @kornpow
+- **Comments:** 5
+- **URL:** https://github.com/block/goose/issues/5213
+
+### Description:
+**Describe the bug**
+Certain LLMs fail to use tool calls properly, and continually mess up. It seems like it is not getting the MCP error message so it can learn to properly use the tool.
+**To Reproduce**
+This error has been seen for a long time at this point, while keeping up to date with goose version.
+I am using openrouter, to switch between various models.
+Claude always seems to intelligently use the `text_editor | developer`
+Grok always seems to FAIL! Sometime it figures it out, sometime it never does and falls back to weird hacks to modify the file without using the tools.
+```
+─── text_editor | developer ──────────────────────────
+path: ui/display_manager.py
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## PR #5165: Propagate session ID in LLM and MCP requests
+
+- **Type:** Pull Request
+- **State:** open
+- **Created:** 2025-10-14
+- **Updated:** 2025-10-14
+- **Closed:** Not closed
+- **Merged:** Not merged
+- **Labels:** None
+- **Author:** @codefromthecrypt
+- **Comments:** 1
+- **URL:** https://github.com/block/goose/pull/5165
+
+### Description:
+## Summary
+
+Adds `goose-session-id` header to HTTP requests and `_meta.goose-session-id` to MCP operations when a session exists. Enables external observability tools like Envoy AI Gateway to correlate requests by session without requiring OpenTelemetry in Goose.
+
+Implementation:
+- Task-local storage for session context propagation
+- HTTP header injection in api_client (case-insensitive via reqwest)
+- MCP metadata injection preserving existing _meta fields (case-insensitive cleanup)
+- Integration and unit tests for both HTTP and MCP propagation
+
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4707: 🎃 Hacktoberfest 2025: Plug & Play Videos with Goose + MCP - 3 Available
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-09-23
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest
+- **Author:** @taniandjerry
+- **Comments:** 0
+- **URL:** https://github.com/block/goose/issues/4707
+
+### Description:
+# 🎃 Hacktoberfest 2025: Plug & Play Videos with Goose + MCP - 3 Available
+Welcome to the **Videos Hub** for Hacktoberfest 2025! This hub coordinates all video contributions to help the Goose community learn through visual demonstrations.
+## 🎯 Overview
+This hub tracks video contributions showcasing Goose integrations with various MCP (Model Context Protocol) extensions. Each issue represents a specific video creation task following our proven template format.
+## 📋 Video Issues
+### MCP Integration Videos
+- #4723: Creating a Goose MCP Integration Video: "Goose with [Your Chosen MCP]" - Subtask 1
+- #4724: Creating a Goose MCP Integration Video: "Goose with [Your Chosen MCP]" - Subtask 2  
+- #4725: Creating a Goose MCP Integration Video: "Goose with [Your Chosen MCP]" - Subtask 3
+## 🔑 Common Requirements for All Video Tasks
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5098: Video 5: goose with [MCP Name] - Real-World Use Case
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-09
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, large
+- **Author:** @blackgirlbytes
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/5098
+
+### Description:
+# Video 3: goose with [MCP Name] - Real-World Use Case
+## 🎯 Goal
+Create a 2-3 minute video demonstrating a practical, real-world use case of a specific MCP (Model Context Protocol) extension with Goose that doesn't have an existing video tutorial.
+## 🔑 Tasks and Acceptance Criteria
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+- [ ] You must host your content on your own website or channel.
+- [ ] The content submitted for this task can be cross-posted across other platforms, however it will only count towards one content task. You may not reuse your content submitted for this task to get points for another task unless there are significant changes (like adding 30 seconds of extra content on YouTube).
+- [ ] Add your content information directly to the `documentation/src/pages/community/data/community-content.json` file in the repository.
+- [ ] Create a pull request with your changes for review.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4729: Video 1: Goose with [MCP Name] - Installation & Basic Usage
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, large
+- **Author:** @taniandjerry
+- **Comments:** 4
+- **URL:** https://github.com/block/goose/issues/4729
+
+### Description:
+# Video 1: Goose with [MCP Name] - Installation & Basic Usage
+## 🎯 Goal
+Create a 2-3 minute video demonstrating how to install and use a specific MCP (Model Context Protocol) extension with Goose that doesn't have an existing video tutorial.
+## 🔑 Tasks and Acceptance Criteria
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+- [ ] You must host your content on your own website or channel.
+- [ ] The content submitted for this task can be cross-posted across other platforms, however it will only count towards one content task. You may not reuse your content submitted for this task to get points for another task unless there are significant changes (like adding 30 seconds of extra content on YouTube).
+- [ ] Add your content information directly to the `documentation/src/pages/community/data/community-content.json` file in the repository.
+- [ ] Create a pull request with your changes for review.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4730: Video 2: Goose with [MCP Name] - Real-World Use Case
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, large
+- **Author:** @taniandjerry
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/4730
+
+### Description:
+# Video 3: goose with [MCP Name] - Real-World Use Case
+## 🎯 Goal
+Create a 2-3 minute video demonstrating a practical, real-world use case of a specific MCP (Model Context Protocol) extension with Goose that doesn't have an existing video tutorial.
+## 🔑 Tasks and Acceptance Criteria
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+- [ ] You must host your content on your own website or channel.
+- [ ] The content submitted for this task can be cross-posted across other platforms, however it will only count towards one content task. You may not reuse your content submitted for this task to get points for another task unless there are significant changes (like adding 30 seconds of extra content on YouTube).
+- [ ] Add your content information directly to the `documentation/src/pages/community/data/community-content.json` file in the repository.
+- [ ] Create a pull request with your changes for review.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4904: Missing tool outputs in UI for sequentially executed tools
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-30
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p2
+- **Author:** @aharvard
+- **Comments:** 1
+- **URL:** https://github.com/block/goose/issues/4904
+
+### Description:
+**Describe the bug**
+The Goose UI fails to display tool outputs and MCP UI components for sequentially executed tools. When multiple tools are called in sequence (one after another), only the first tool's output is rendered in the UI with both "Tool Details" and "Output" sections visible. All subsequent tools only show "Tool Details" without any visible output section, including MCP UI components.
+However, when the same tools are called in parallel (at once), the UI correctly renders all tool outputs and MCP UI components simultaneously.
+**logs**
+[tool-calls-in-sequence__20250930_135612.txt](https://github.com/user-attachments/files/22625281/tool-calls-in-sequence__20250930_135612.txt)
+[tool-calls-at-once__20250930_135657.txt](https://github.com/user-attachments/files/22625280/tool-calls-at-once__20250930_135657.txt)
+**To Reproduce**
+Steps to reproduce the behavior:
+**Scenario 1: Sequential tool calls (reproduces the bug)**
+1. In Goose UI, ask the assistant to execute tools sequentially with a prompt like: "I want you to call a few in sequence: write a new file to my desktop and write a poem about flowers, read that file, then Tool Call: \_mcpaharvard\_\_demo-mcp-ui-actions"
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4611: MCP auth doesn't work with Keycloak.
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-11
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** p2
+- **Author:** @zhaohuabing
+- **Comments:** 4
+- **URL:** https://github.com/block/goose/issues/4611
+
+### Description:
+**Describe the bug**
+Hello, and thanks for the amazing work on Goose — I really love it! Great job! 🎉
+I’ve been experimenting with Goose, trying to connect it to my MCP server with Keycloak as the auth server.
+When I enable the MCP server in the extension configuration, Goose sends two requests to the MCP server:
+First request
+	•	Path: /mcp
+	•	Response: 401 Unauthorized with a www-authenticate header
+Second request
+	•	Path: /.well-known/oauth-authorization-server
+	•	Response:
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## PR #5151: feat: tidy otel and implement http and MCP propagation
+
+- **Type:** Pull Request
+- **State:** open
+- **Created:** 2025-10-13
+- **Updated:** 2025-10-16
+- **Closed:** Not closed
+- **Merged:** Not merged
+- **Labels:** None
+- **Author:** @codefromthecrypt
+- **Comments:** 4
+- **URL:** https://github.com/block/goose/pull/5151
+
+### Description:
+## Summary
+
+This improves the OpenTelemetry implementation such that it correctly creates distributed traces.
+
+This focuses on trace propagation, both to LLM providers (HTTP headers) and MCP servers (request metadata).
+
+This also prefers standard otel environment configuration and defaults instead of hard-coding, allowing drop-in usage with the same ENV as python or other language agents.
+
+### Type of Change
+- [x] Feature
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5048: any MCP server extensions I add to the goose config fail to start when running goose UI
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-07
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p2
+- **Author:** @shaunie2fly
+- **Comments:** 3
+- **URL:** https://github.com/block/goose/issues/5048
+
+### Description:
+any MCP server extensions I add to the goose config fail to start when running goose UI .   Goose cli loads them without an issue.
+Error activating extension: Failed to add extension configuration, error: ProcessExit(ProcessExit { stderr: "2025-10-07 06:26:46 - Starting npx setup script.\n2025-10-07 06:26:46 - Creating directory ~/.config/goose/mcp-hermit/bin if it does not exist.\n2025-10-07 06:26:46 - Changing to directory ~/.config/goose/mcp-hermit.\n2025-10-07 06:26:46 - Hermit binary already exists. Skipping download.\n2025-10-07 06:26:46 - setting hermit cache to be local for MCP servers\n2025-10-07 06:26:46 - Updated PATH to include ~/.config/goose/mcp-hermit/bin.\n2025-10-07 06:26:46 - Checking for hermit in PATH.\n2025-10-07 06:26:46 - Initializing hermit.\nfatal:hermit: open /home/shaunbotsis/.config/goose/mcp-hermit/bin/hermit: text file busy\n2025-10-07 06:26:46 - An error occurred. Exiting with status 1.\n", source: ConnectionClosed("initialize response") })
+(base) shaun@homepc-big:~$ uname -a
+Linux homepc-big 6.16.3-76061603-generic #202508231538~1758561135~22.04~171c8de SMP PREEMPT_DYNAMIC Mon S x86_64 x86_64 x86_64 GNU/Linux
+A clear and concise description of what the bug is.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. add a extension 
+2. start goose
+3. See error
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4731: Video 3: Goose with [MCP Name] - Real-World Use Case
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-10-17
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, large
+- **Author:** @taniandjerry
+- **Comments:** 4
+- **URL:** https://github.com/block/goose/issues/4731
+
+### Description:
+# Video 3: Goose with [MCP Name] - Real-World Use Case
+## 🎯 Goal
+Create a 2-3 minute video demonstrating a practical, real-world use case of a specific MCP (Model Context Protocol) extension with Goose that doesn't have an existing video tutorial.
+## 🔑 Tasks and Acceptance Criteria
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+- [ ] You must host your content on your own website or channel.
+- [ ] The content submitted for this task can be cross-posted across other platforms, however it will only count towards one content task. You may not reuse your content submitted for this task to get points for another task unless there are significant changes (like adding 30 seconds of extra content on YouTube).
+- [ ] Add your content information directly to the `documentation/src/pages/community/data/community-content.json` file in the repository.
+- [ ] Create a pull request with your changes for review.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4981: Bedrock provider does not handle MCP tool errors correctly
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-03
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** p2
+- **Author:** @the-destro
+- **Comments:** 7
+- **URL:** https://github.com/block/goose/issues/4981
+
+### Description:
+**Describe the bug**
+Paths no longer seem to be obviously duplicated but I do get this error:
+```
+-32603: Mcp error: -32603: Failed to write file: No such file or directory (os error 2)  2025-10-03T14:38:57.961834Z  WARN goose::providers::lead_worker: Technical failure with worker provider, retrying with default model (lead provider)
+    at crates/goose/src/providers/lead_worker.rs:386
+  2025-10-03T14:38:57.961947Z ERROR goose::providers::lead_worker: ❌ Default model (lead provider) also failed - returning original error
+    at crates/goose/src/providers/lead_worker.rs:399
+  2025-10-03T14:38:57.961961Z  WARN goose::providers::lead_worker: Technical failure detected - API/LLM issue, will use default model
+    at crates/goose/src/providers/lead_worker.rs:187
+Error: Execution error: content was missing: content was not specified but it is required when building ToolResultBlock
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## PR #4626: fix: relax CSP for MCP-UI webviews to allow fonts and safe media sources
+
+- **Type:** Pull Request
+- **State:** open
+- **Created:** 2025-09-12
+- **Updated:** 2025-10-13
+- **Closed:** Not closed
+- **Merged:** Not merged
+- **Labels:** None
+- **Author:** @aharvard
+- **Comments:** 6
+- **URL:** https://github.com/block/goose/pull/4626
+
+### Description:
+## Summary
+This PR updates Goose’s Content Security Policy (CSP) for the MCP-UI host environment to resolve CSP blocks encountered when loading MCP-UIs in Goose. We now permit fonts (stylesheet and font assets as required by MCP-UIs) and expand `media-src` to cover safe media sources commonly used by MCP-UIs, while keeping the policy as tight as possible.
+
+## Background
+Users loading MCP-UIs in Goose hit CSP violations, preventing external stylesheets and media from loading. Example console errors:
+
+- `about:srcdoc:11 Refused to load the stylesheet 'https://…/inter.css' because it violates the following Content Security Policy directive: "style-src 'self' 'unsafe-inline'". Note that 'style-src-elem' was not explicitly set, so 'style-src' is used as a fallback.`
+- `Refused to load media from '<URL>' because it violates the following Content Security Policy directive: "media-src 'self' mediastream:".`
+
+## Root cause
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #3970: Auto Connect and Update for MCP Dependencies
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-08-08
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** enhancement, p3
+- **Author:** @mshklovsky
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/3970
+
+### Description:
+**Please explain the motivation behind the feature request.**
+Does this feature solve a particular problem you have been experiencing? What opportunities or use cases would be unlocked with this feature?
+Adding this feature would optimize for having to manually connect to dependencies through OKTA every time which is time consuming especially when using multiple MCP's at the same time that rely on different connectors i.e DataBricks, Snowflake, etc.
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
+Auto Connect / Re-Connect button or feature (automated dependent on settings)
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
+At this time I don't know of any alternatives unfortunatley
+**Additional context**
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4723: 📝 Blog Post: Deep dive into Goose's extension system and MCP
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-23
+- **Updated:** 2025-10-19
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, medium
+- **Author:** @taniandjerry
+- **Comments:** 2
+- **URL:** https://github.com/block/goose/issues/4723
+
+### Description:
+# Deep Dive into Goose's Extension System and MCP
+## 🚀 Goal
+Create a comprehensive technical guide that explores Goose's extension system and Model Context Protocol (MCP), helping developers understand the architecture and build custom integrations.
+## 🤔 Background
+Goose's extensibility through MCP is one of its most powerful features, but the technical details can be complex. This blog post will help advanced developers understand the architecture, protocols, and best practices for building robust extensions.
+## 🤝 How You Can Contribute
+Write a detailed technical guide based on your experience with Goose's extension system, including architectural insights, development patterns, and practical examples of building custom MCP extensions.
+## 🔑 Tasks and Acceptance Criteria
+### **❗You must only assign yourself one task at a time to give everyone a chance to participate.❗**
+You may assign yourself another task after your current one is reviewed and accepted.
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5142: What does the Developer Extension do? / How is it configured? / It seems to execute arbitrary shell commands
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-12
+- **Updated:** 2025-10-13
+- **Closed:** Not closed
+
+- **Labels:** clarification
+- **Author:** @cruftex
+- **Comments:** 3
+- **URL:** https://github.com/block/goose/issues/5142
+
+### Description:
+**Describe the bug**
+I assume the Developer Extension is the one to use to work with a local code base.
+**To Reproduce**
+Check documentation, like here: https://block.github.io/goose/docs/mcp/developer-mcp
+When prompted goose was creating files and executing programs, also it did that within a subtask without any further output or asking for confirmation, see #5140 
+**Expected behavior**
+Information that answers basic questions, what files or resources are accessed by the extension and how that can be controlled.
+Possibility to switch on or off tool execution.
+Ideally a sandbox that limits modification to a project directory or working directory, including effects of scripts.
+**Please provide following information:**
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #3562: Goose Desktop: render UI from tool response embedded resource
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-07-21
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** enhancement, p2
+- **Author:** @aharvard
+- **Comments:** 10
+- **URL:** https://github.com/block/goose/issues/3562
+
+### Description:
+## Motivations
+The MCP client experience in Goose Desktop is constrained to a single-threaded chat design paradigm and lacks the capability to render rich, interactive UIs based on tool results for users. 
+The primary motivator behind this work is this MCP discussion, [New Content Type for "UI" #287](https://github.com/orgs/modelcontextprotocol/discussions/287), opened by @kentcdodds.
+We have two PRs ([#2948](https://github.com/block/goose/pull/2948), [#3432](https://github.com/block/goose/pull/3432)) that attempt to add support for [mcp-ui](https://mcpui.dev/) inside of Goose. We need to make some architectural decisions that can help close one and merge the other. 
+This work can unlock [#3493](https://github.com/block/goose/pull/3493) (a goose-native text diff viewer sidecar) plus many more enable future possibilities, such as: 
+- Help designers explore photos and media from a digital asset manager directly in Goose
+- Visualize the contents of files (text, image, video, audio, 3D, code, etc) created by tools on the user’s system
+- Provide a preview environment for localhost dev (and potentially a “deploy” button alongside) 
+- Provide text authoring tools for copywriters, content designers
+- Provide code editing for developers
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4481: Goose stuck "thinking" calling Jenkins MCP server after upgrading from Goose 1.2.0 to 1.3.0
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-09-02
+- **Updated:** 2025-10-20
+- **Closed:** Not closed
+
+- **Labels:** p2, mcp, waiting
+- **Author:** @batmat
+- **Comments:** 16
+- **URL:** https://github.com/block/goose/issues/4481
+
+### Description:
+I configured Goose 1.1.4 a few weeks back to use https://github.com/jenkinsci/mcp-server-plugin using Streamable HTTP, it was working great.
+I upgraded to latest 1.7.0 and saw Goose was getting stuck.
+So I went on checking precisely when it started breaking, and it is on 1.3.0 that this stops working for me. (and is still broken with latest 1.7.0)
+A clear and concise description of what the bug is.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Install the [Jenkins MCP server plugin](https://block.github.io/goose/docs/troubleshooting) onto a Jenkins instance
+2. Create an access token
+3. Run Goose 1.2.0
+4. Create a Goose Extension for  the Jenkins MCP server using Streamable HTTP (pass a typical base64 encoded password after creating an access token)
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #4222: Feature Request goose Extension for rendering Mermaid Charts in the Chat UI
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-08-20
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** hacktoberfest, large
+- **Author:** @blakemcanally
+- **Comments:** 7
+- **URL:** https://github.com/block/goose/issues/4222
+
+### Description:
+**Please explain the motivation behind the feature request.**
+I often use goose to learn about new codebases, and ask it to generate Class / Sequence diagrams for code. I usually ask it to output the result in a [Mermaid](https://mermaid.js.org/) diagram. 
+**Describe the solution you'd like**
+It would be cool to give goose the ability to render those mermaid charts inline in the chat UI, instead of me having to copy & paste the code snippet into an external tool to visualize it.
+**Describe alternatives you've considered**
+My current workflow is a good alternative to this, but streamlining this use-case will feel better for users.
+- [x] I have verified this does not duplicate an existing feature request
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## Issue #5068: Surface the platform built in tools as MCP extensions, to support disabling them
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-10-08
+- **Updated:** 2025-10-11
+- **Closed:** Not closed
+
+- **Labels:** enhancement, p1
+- **Author:** @sam-at-block
+- **Comments:** 1
+- **URL:** https://github.com/block/goose/issues/5068
+
+### Description:
+**Please explain the motivation behind the feature request.**
+There are a few newer sets of tools that are built in, but not surfaced as MCP extensions meaning they cannot be disabled at all. 
+**Describe the solution you'd like**
+- The manage extensions set definitely needs to be able to be disabled, to support workloads where goose should use only the extensions explicitly enabled.   
+- The parallelism sub agent tool  
+- The todo list manager tool set  
+These can default to enabled, like the dev toolkit, but should at minimum be controllable by the user like all other tools. 
+I also think it'd be a good decision to adopt that goose will never build in tools that cannot be disabled by the user. Trust Trust Trust.
+**Describe alternatives you've considered**
+There's a tool set permissions config, but that seems like the wrong solution, since its counter to how I'd expect to interact with these tool sets, which would be the same as all other extensions including the enabled by default developer built in. 
+
+_[Description truncated - see URL for full details]_
+
+--------------------------------------------------------------------------------
+
+## PR #5191: Readonly developer extension
+
+- **Type:** Pull Request
+- **State:** open
+- **Created:** 2025-10-15
+- **Updated:** 2025-10-16
+- **Closed:** Not closed
+- **Merged:** Not merged
+- **Labels:** None
+- **Author:** @tlongwell-block
+- **Comments:** 0
+- **URL:** https://github.com/block/goose/pull/5191
+
+### Description:
+_No description provided_
+
+--------------------------------------------------------------------------------
+
+## Issue #2351: Bug: Unable to add extension on linux
+
+- **Type:** Issue
+- **State:** open
+- **Created:** 2025-04-25
+- **Updated:** 2025-10-19
+- **Closed:** Not closed
+
+- **Labels:** p1, mcp, onboarding, linux
+- **Author:** @Jax-Tsai-zero
+- **Comments:** 20
+- **URL:** https://github.com/block/goose/issues/2351
+
+### Description:
+```bash
+Error: Error activating extension: Failed to add extension configuration, error: Initialization(Stdio { name: "pdfreader", cmd: "/usr/lib/goose-desktop/resources/bin/uvx", args: ["mcp-read-pdf"], envs: Envs { map: {} }, timeout: Some(300), description: None, bundled: None }, McpServerError { method: "initialize", server: "", source: ServerBoxError(StdioProcessError("fatal:hermit: open /home/Jax-Tsai/.config/goose/mcp-hermit/bin/hermit: text file busy\n")) })
+```
+platform: arch linux
+
+--------------------------------------------------------------------------------

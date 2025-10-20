@@ -128,6 +128,20 @@ servers.
 
 ---
 
+# What's New in Aider {.r-fit-text data-background="images/9.png"}
+
+**Since April 2024** (v0.28 → v0.86+, 40+ releases):
+
+- **Architect Mode**: Use reasoning models (o1) + fast editor models
+- **IDE Integration**: Watch files for AI comments (`# ... AI!`)
+- **Browser Interface**: Run Aider in your web browser
+- **Advanced Testing**: Auto-lint & test after every edit
+- **GPT-5 & Claude 4** support, DeepSeek V3/R1, Grok-3/4
+- **130+ Languages**: Extended tree-sitter support
+- **Multi-model workflows**: Different models for different tasks
+
+---
+
 # Tool introduction: Claude Code {.r-fit-text data-background="images/10.png"}
 
 - Developed by [Anthropic](https://www.anthropic.com/claude)
@@ -138,13 +152,43 @@ servers.
 
 ---
 
+# What's New: Claude & MCP {.r-fit-text data-background="images/10.png"}
+
+**Major Development Since April 2024**:
+
+- **Model Context Protocol (MCP)** - Open standard (Nov 2024)
+- **Claude 3.7 & 4.0 Sonnet** - Latest model versions
+- **MCP Servers**: Google Drive, Slack, GitHub, Postgres, Puppeteer
+- **Claude Desktop**: Local MCP server support
+- **Ecosystem Adoption**: Zed, Replit, Codeium, Sourcegraph
+- **Enterprise MCP** (coming): Remote production servers
+
+**Note**: No official "Claude Code" product - Claude powers *other* coding tools via API/MCP
+
+---
+
 # Tool introduction: Cursor {.r-fit-text data-background="images/1.png"}
 
-- Developed by Cursor team (acquired by Anthropic)
+- Developed by Anysphere Inc. (independent company)
 - Proprietary editor with open-source components
-- Supports both OpenAI and Anthropic models
+- Supports OpenAI, Anthropic, and Google models
 - Fully agentic with project navigation
 - Supports [MCP](https://docs.cursor.com/context/model-context-protocol)
+
+---
+
+# What's New in Cursor {.r-fit-text data-background="images/1.png"}
+
+**Since April 2024**:
+
+- **Agent Mode**: Autonomous task planning and execution
+- **Composer Mode**: Multi-file coordinated editing
+- **Background Agent**: Long-running tasks in background
+- **CLI Tools**: Headless operation, GitHub Actions integration
+- **Browser Integration**: Web automation capabilities
+- **Enhanced MCP Support**: Full Model Context Protocol integration
+- **Enterprise Features**: Teams, SSO, SCIM, Admin API, Analytics
+- Visit [changelog.cursor.sh](https://changelog.cursor.sh) for detailed updates
 
 ---
 
@@ -156,6 +200,21 @@ servers.
 - Fully agentic with integrated tooling
 - Supports [MCP](https://block.github.io/goose/docs/getting-started/using-extensions#mcp-servers)
 - Supports OpenRouter! (<https://openrouter.ai>)
+
+---
+
+# What's New in Goose {.r-fit-text data-background="images/2.png"}
+
+**Since April 2024** (Public launch Jan 2025):
+
+- **Desktop App**: GUI interface alongside CLI
+- **Recipe System**: Repeatable workflow automation (May 2025)
+- **Subagents & Subrecipes**: Complex task delegation (Sept 2025)
+- **MCP-UI**: Intent-based AI interfaces (Aug 2025)
+- **Browser Automation**: "Driver's License" feature (May 2025)
+- **Container-use**: Isolated dev environments (June 2025)
+- **Multi-Model Support**: Use different models per task
+- **OpenRouter Integration**: Access to 100+ models (July 2025)
 
 ---
 
@@ -172,6 +231,20 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 ---
 
+# What's New in Junie {.r-fit-text data-background="images/3.png"}
+
+**Since April 2024**:
+
+- **Status Update**: Now in **Public Early Access Program** (was private beta)
+- **MCP Support**: Model Context Protocol integration added
+- **Remote Development**: macOS & Linux support (not Windows yet)
+- **GitHub Integration**: "Junie on GitHub" EAP now open
+- **Platform Support**: JVM and PHP projects currently supported
+- **Multi-Model**: GPT-5 support mentioned alongside Claude
+- **Open Source Grants**: Available for open-source projects
+
+---
+
 # Tool Comparison {.r-fit-text data-background="images/4.png"}
 
 | Tool      | Open Source | MCP Support | Agentic | Models Supported       |
@@ -180,7 +253,7 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 | Claude    | No          | Yes         | Full    | Claude Models          |
 | Cursor    | No          | Yes         | Full    | OpenAI, Claude, Gemini |
 | Goose     | Yes         | Yes         | Full    | Bring your own         |
-| Junie     | No          | No          | Full    | Claude 3.7 Sonnet      |
+| Junie     | No          | Yes         | Full    | Claude 3.7 + GPT-5     |
 
 ---
 
