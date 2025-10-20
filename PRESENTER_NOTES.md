@@ -8,19 +8,19 @@
 **Why the confusion?** Cursor *uses* Claude API, but that's a partnership, not ownership
 
 ### 2. Claude Code Clarification
-**Important:** There is **NO** official product called "Claude Code"  
-**What exists:**
-- Anthropic released **MCP** (Model Context Protocol) - an open standard
-- Third-party tools (Aider, Cursor, etc.) integrate with Claude via API
-- "Claude Code" is a misnomer for these integrations
+**Important:** "Claude Code" is a coding agent tool released by Anthropic  
+**What it is:**
+- Anthropic-built coding agent experience (CLI/Desktop) powered by Claude models
+- Supports **MCP** (Model Context Protocol) for tool integration
+- Used directly and also via integrations in third-party tools
 
 ---
 
 ## ⏱️ Timeline Context
 
-**Your original presentation:** April 2024  
+**Your original presentation:** April 2025  
 **Today:** October 2025  
-**Time elapsed:** ~18 months of *massive* AI agent evolution
+**Time elapsed:** ~6 months of rapid AI agent evolution
 
 ---
 
@@ -100,7 +100,7 @@
 
 ## 🎤 Opening Remarks Suggestion
 
-> "When I gave this presentation in April 2024, the AI coding assistant landscape was already moving fast. But in the 18 months since, it's been transformative. Today, I'm updating you on what's changed - and trust me, a LOT has changed. 
+> "When I gave this presentation in April 2025, the AI coding assistant landscape was already moving fast. But in the 6 months since, it's been transformative. Today, I'm updating you on what's changed - and trust me, a LOT has changed. 
 >
 > The biggest development? The Model Context Protocol, or MCP, which Anthropic open-sourced in November 2024. It's becoming the standard way AI agents connect to external tools and data - and almost every tool we're discussing today has adopted it."
 
@@ -108,7 +108,7 @@
 
 ## 🎤 Closing Remarks Suggestion
 
-> "Since April 2024, we've seen:
+> "Since April 2025, we've seen:
 > - 40+ releases of Aider with revolutionary features like Architect Mode
 > - The birth of MCP as an open standard
 > - Goose going from stealth to full public release
@@ -230,7 +230,7 @@ aider --architect-model gpt-4o --editor-model claude-3.5-sonnet
 
 ## 🚫 What NOT to Say
 
-❌ "Claude Code is a product from Anthropic"  
+ 
 ❌ "Cursor was acquired by Anthropic"  
 ❌ "AI will replace all developers"  
 ❌ "You should only use one tool"  

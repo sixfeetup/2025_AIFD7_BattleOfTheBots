@@ -130,7 +130,7 @@ servers.
 
 # What's New in Aider {.r-fit-text data-background="images/9.png"}
 
-**Since April 2024** (v0.28 → v0.86+, 40+ releases):
+**Since April 2025** (v0.28 → v0.86+, 40+ releases):
 
 - **Architect Mode**: Use reasoning models (o1) + fast editor models
 - **IDE Integration**: Watch files for AI comments (`# ... AI!`)
@@ -152,9 +152,9 @@ servers.
 
 ---
 
-# What's New: Claude & MCP {.r-fit-text data-background="images/10.png"}
+# What's New in Claude Code & MCP {.r-fit-text data-background="images/10.png"}
 
-**Major Development Since April 2024**:
+**Major Development Since April 2025**:
 
 - **Model Context Protocol (MCP)** - Open standard (Nov 2024)
 - **Claude 3.7 & 4.0 Sonnet** - Latest model versions
@@ -163,7 +163,7 @@ servers.
 - **Ecosystem Adoption**: Zed, Replit, Codeium, Sourcegraph
 - **Enterprise MCP** (coming): Remote production servers
 
-**Note**: No official "Claude Code" product - Claude powers *other* coding tools via API/MCP
+**Note**: Claude Code is an Anthropic coding agent tool and supports MCP
 
 ---
 
@@ -179,7 +179,7 @@ servers.
 
 # What's New in Cursor {.r-fit-text data-background="images/1.png"}
 
-**Since April 2024**:
+**Since April 2025**:
 
 - **Agent Mode**: Autonomous task planning and execution
 - **Composer Mode**: Multi-file coordinated editing
@@ -205,7 +205,7 @@ servers.
 
 # What's New in Goose {.r-fit-text data-background="images/2.png"}
 
-**Since April 2024** (Public launch Jan 2025):
+**Since April 2025** (Public launch Jan 2025):
 
 - **Desktop App**: GUI interface alongside CLI
 - **Recipe System**: Repeatable workflow automation (May 2025)
@@ -233,7 +233,7 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 # What's New in Junie {.r-fit-text data-background="images/3.png"}
 
-**Since April 2024**:
+**Since April 2025**:
 
 - **Status Update**: Now in **Public Early Access Program** (was private beta)
 - **MCP Support**: Model Context Protocol integration added
@@ -250,7 +250,7 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 | Tool      | Open Source | MCP Support | Agentic | Models Supported       |
 |-----------|-------------|-------------|---------|------------------------|
 | Aider     | Yes         | No          | Semi    | Bring your own         |
-| Claude    | No          | Yes         | Full    | Claude Models          |
+| Claude Code | No          | Yes         | Full    | Claude Models          |
 | Cursor    | No          | Yes         | Full    | OpenAI, Claude, Gemini |
 | Goose     | Yes         | Yes         | Full    | Bring your own         |
 | Junie     | No          | Yes         | Full    | Claude 3.7 + GPT-5     |

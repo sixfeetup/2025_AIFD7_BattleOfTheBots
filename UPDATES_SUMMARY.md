@@ -1,7 +1,7 @@
 # Presentation Updates Summary
 
 ## Overview
-Updated the "Battle of the Bots" presentation with the latest changes to each AI coding tool since April 2024. Added new "What's New" slides for each tool and corrected inaccuracies.
+Updated the "Battle of the Bots" presentation with the latest changes to each AI coding tool since April 2025. Added new "What's New" slides for each tool and corrected inaccuracies.
 
 ---
 
@@ -19,11 +19,11 @@ Updated the "Battle of the Bots" presentation with the latest changes to each AI
 - 130+ language support via tree-sitter
 - Multi-model workflows
 
-**Version Progress:** v0.28 → v0.86+ (40+ releases since April 2024)
+**Version Progress:** v0.28 → v0.86+ (multiple releases since April 2025)
 
 ---
 
-### 2. **Claude Code - Renamed to "Claude & MCP" Slide**
+### 2. **Claude Code - Clarified with MCP context**
 **Location:** After "Tool introduction: Claude Code"
 
 **Key Updates Highlighted:**
@@ -35,9 +35,9 @@ Updated the "Battle of the Bots" presentation with the latest changes to each AI
 - Enterprise MCP coming soon
 
 **Important Clarification Added:**
-> "Note: No official 'Claude Code' product - Claude powers *other* coding tools via API/MCP"
+> "Note: Claude Code is an Anthropic coding agent tool - this slide highlights Claude Code alongside MCP support"
 
-This corrects a potential misconception that Anthropic has a standalone coding tool called "Claude Code."
+This corrects the prior note that incorrectly suggested "Claude Code" was not an official product.
 
 ---
 
@@ -108,8 +108,8 @@ This corrects a potential misconception that Anthropic has a standalone coding t
 - **Reason:** No evidence of acquisition exists. Cursor is an independent company that uses Anthropic's API.
 
 ### 2. **Claude Code Clarification**
-- **Added note:** There is no official Anthropic product called "Claude Code"
-- **Context:** Third-party tools (like Aider, Cline, etc.) use Claude, but Anthropic doesn't have a standalone coding product
+- **Clarified:** Claude Code is an Anthropic coding agent tool
+- **Context:** Anthropic offers an official coding agent tool (Claude Code) and third-party tools (like Aider, Cline, etc.) also integrate with Claude via API/MCP
 - **What Anthropic Did:** Released MCP as an open protocol for tools to integrate with Claude
 
 ### 3. **Junie Status & Capabilities**
@@ -158,9 +158,9 @@ Three comprehensive research documents were created in the process:
 
 ## Timeline Context
 
-The original presentation was given in **April 2024**. The AI agent world has moved significantly since then:
+The original presentation was given in **April 2025**. The AI agent world has moved significantly since then:
 
-### Major Developments Since April 2024:
+### Major Developments Since April 2025:
 
 **November 2024:**
 - Anthropic releases Model Context Protocol (MCP) as open standard
@@ -211,7 +211,7 @@ The original presentation was given in **April 2024**. The AI agent world has mo
 
 ## Recommendations for Presenter
 
-1. **Emphasize the timeline**: The pace of change since April 2024 has been remarkable
+1. **Emphasize the timeline**: The pace of change since April 2025 has been remarkable
 2. **MCP is the big story**: It's now a common thread across most tools (except Aider)
 3. **Correct misconceptions**: Be ready to clarify that Cursor is independent and there's no "Claude Code" product
 4. **Highlight model diversity**: GPT-5, Claude 4, DeepSeek R1 all emerged recently
