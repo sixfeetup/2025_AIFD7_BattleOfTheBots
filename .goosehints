@@ -2,21 +2,24 @@
 
 Project conventions
 
-- Slides authoring
-  - Presenter notes: always use a Markdown fenced block with exactly this form:
+- Slide authoring style
+  - Keep slide bullets ultra‑concise; move detail (lists, dates, links) into presenter notes
+  - Lead “What’s New” bullets with bolded category labels (e.g., **v2.0**, **Plugins**, **Hooks**, **MCP**)
+  - Maintain consistent style across tools (Aider, Claude Code, Cursor, Goose, Junie, Codex)
+  - MCP statements: don’t present MCP as new for Claude Code; note support since 2024 in notes if needed
+  
+- Presenter notes
+  - Always use a Markdown fenced block exactly:
     ::: notes
     - Keep notes concise (≤4 bullets) and actionable
-    - Use for speaker-only clarifications, caveats, and sources
+    - Add sources/links here (docs pages, changelogs)
+    - Use for speaker-only context, caveats, dates
     :::
-  - "What's New" slides: keep bullets short; lead with bolded category labels (e.g., **v2.0**, **Plugins**, **MCP**)
-  - Maintain consistent style across tools (Aider, Claude Code, Cursor, Goose, Junie, Codex)
-  - Model/version claims must include sources (links) in the presenter notes, not in the main bullets
-  - MCP statements: do not present MCP as new for Claude Code; clarify it's supported since 2024
-
+  - Place the notes block immediately after the slide it annotates
+  
 - Formatting
   - Use Markdown; avoid heavy formatting in bullets
   - Use r-fit-text headings as in existing slides
-  - Place presenter notes immediately after the slide section they refer to
 
 - Git
   - Commit slide edits with concise messages

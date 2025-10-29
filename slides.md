@@ -170,6 +170,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 ::: notes
 - MCP support isn’t new (added in 2024); the recent changes are usability and enterprise enhancements
+- Hooks docs: https://docs.claude.com/en/docs/claude-code/hooks
 - Sources: Claude Code CHANGELOG and docs release notes
   - https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
   - https://docs.claude.com/en/release-notes/claude-code
