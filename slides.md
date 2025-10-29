@@ -188,26 +188,24 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 ---
 
-# What's New in Cursor since Apr 2025 {.r-fit-text data-background="images/1.png"}
+# What's New in Cursor {.r-fit-text data-background="images/1.png"}
 
-- Background Agents: Run agents continuously in isolated VMs with internet access; configure dev env via `.cursor/environment.json`; GitHub integration; IAM Role support; dashboards, pricing, and security notes
-  - Docs: <https://cursor.com/docs/background-agent>, API: <https://cursor.com/docs/background-agent/api/overview>, Webhooks: <https://cursor.com/docs/background-agent/api/webhooks>
-- Agent Modes: Agent, Ask, Plan, and Custom modes with mode-specific tools; Plan mode creates reviewable implementation plans
-  - Docs: <https://cursor.com/docs/agent/modes>
-- Rules and AGENTS.md: New Project Rules in `.cursor/rules` (MDC format, auto-attach/agent-requested/manual), Team Rules (enforceable), plus simple `AGENTS.md`; generate rules from chat with `/Generate Cursor Rules`
-  - Docs: <https://cursor.com/docs/context/rules>
-- Headless + CI: Headless CLI for automations and first-class GitHub Actions integration
-  - Docs: <https://cursor.com/docs/cli/headless>, <https://cursor.com/docs/cli/github-actions>
-- MCP: Client and Extension API, directory and install links for easy setup
-  - Docs: <https://cursor.com/docs/context/mcp>, <https://cursor.com/docs/context/mcp-extension-api>, <https://cursor.com/docs/context/mcp/directory>, <https://cursor.com/docs/context/mcp/install-links>
-- Browser tool: Use a built-in browser tool for web context and automation
-  - Docs: <https://cursor.com/docs/agent/browser>
-- Enterprise: Admin API, Analytics v2, SSO/SCIM, usage & spend controls, model/integration management, compliance
-  - Docs: <https://cursor.com/docs/enterprise>, <https://cursor.com/docs/account/teams/admin-api>, <https://cursor.com/docs/account/teams/analytics-v2>, <https://cursor.com/docs/enterprise/usage-and-spend-controls>, <https://cursor.com/docs/enterprise/model-and-integration-management>, <https://cursor.com/docs/account/teams/sso>, <https://cursor.com/docs/account/teams/scim>
-- Models & Max Mode: Max-Mode compatible models for long-running/background work
-  - Docs: <https://cursor.com/docs/context/max-mode>, <https://cursor.com/docs/models>
+- **Background Agents**: Continuous VMs, GitHub/IAM, dashboards
+- **Modes**: Agent, Ask, Plan, Custom; reviewable plans
+- **Rules**: Project/Team rules (.cursor/rules), AGENTS.md, /Generate Cursor Rules
+- **Headless/CI**: Headless CLI; GitHub Actions
+- **MCP**: Client + Extension API; directory/install
+- **Browser**: Built-in web tool
+- **Enterprise**: Admin API, Analytics v2, SSO/SCIM, spend controls
+- **Models/Max**: Max‑Mode for long‑running work
 
-For ongoing releases: <https://www.cursor.com/changelog>
+::: notes
+- Background Agents: docs, API, webhooks — https://cursor.com/docs/background-agent | https://cursor.com/docs/background-agent/api/overview | https://cursor.com/docs/background-agent/api/webhooks
+- Modes & Rules: https://cursor.com/docs/agent/modes | https://cursor.com/docs/context/rules
+- Headless/CI & MCP: https://cursor.com/docs/cli/headless | https://cursor.com/docs/cli/github-actions | https://cursor.com/docs/context/mcp | https://cursor.com/docs/context/mcp-extension-api | https://cursor.com/docs/context/mcp/directory | https://cursor.com/docs/context/mcp/install-links
+- Browser: https://cursor.com/docs/agent/browser
+- Enterprise, Models & Changelog: https://cursor.com/docs/enterprise | https://cursor.com/docs/account/teams/admin-api | https://cursor.com/docs/account/teams/analytics-v2 | https://cursor.com/docs/enterprise/usage-and-spend-controls | https://cursor.com/docs/enterprise/model-and-integration-management | https://cursor.com/docs/account/teams/sso | https://cursor.com/docs/account/teams/scim | https://cursor.com/docs/context/max-mode | https://cursor.com/docs/models | https://www.cursor.com/changelog
+:::
 
 ---
 
