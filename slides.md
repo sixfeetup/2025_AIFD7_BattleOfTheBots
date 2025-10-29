@@ -160,20 +160,21 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 # What's New in Claude Code (since Apr 2025) {.r-fit-text data-background="images/10.png"}
 
-- 2.0 Release (Sept 2025): native VS Code extension, `/rewind` to undo code changes, `/usage` for plan limits, toggle thinking, Ctrl‑R history search, Agent SDK rename, dynamic subagents
-- Plugins (2.0.12): extensibility system with marketplaces; `/plugin install|enable|disable|marketplace|validate`; repo‑level marketplace config; `/doctor` diagnostics
-- Subagents & Planning (2.0.17, 2.0.28): Plan subagent; Explore subagent for fast code search; resume subagents; choose models per subagent
-- Models: default Sonnet 4.5, Opus 4.1 upgrade, Haiku 4.5 added; Sonnet‑plan + Haiku‑execute combo
-- Bash & Sandbox: background long‑running commands; tab completion; sandbox mode for BashTool on macOS/Linux
-- Skills: support for Claude Skills (2.0.20)
-- MCP enhancements: enable/disable servers by @‑mention; multiple mcp config files; import from Claude Desktop; OAuth discovery; remote SSE/HTTP with OAuth; structuredContent and resource_link support; enterprise allow/deny lists
-- UI/UX: buttery‑smooth terminal renderer; improved permission prompts; redesigned search tool; drag‑and‑drop files; transcript shows model; `/export` for sharing
+- **v2.0**: Native VS Code extension, `/rewind`, `/usage`, thinking toggle, Ctrl‑R history, Agent SDK rename, dynamic subagents
+- **Plugins**: Install/enable/disable/marketplace/validate; repo‑level marketplaces; `/doctor` diagnostics
+- **Subagents**: Plan and Explore subagents; resume subagents; per‑subagent model selection
+- **Models**: Sonnet 4.5 default; Opus 4.1; Haiku 4.5; Sonnet‑plan + Haiku‑execute
+- **Bash/Sandbox**: Background long‑running commands; tab completion; BashTool sandbox (macOS/Linux)
+- **Skills**: Claude Skills support
+- **MCP**: @‑mention toggles, multi‑config files, import from Claude Desktop, OAuth discovery, SSE/HTTP w/ OAuth, enterprise allow/deny lists
+- **UI/UX**: Smoother terminal, better permission prompts, redesigned search, drag‑and‑drop, transcript shows model, `/export`
 
-Notes
-- MCP support in Claude Code is not new (introduced in 2024); recent updates focus on usability and enterprise features
-- Sources: Official changelog and docs
+::: notes
+- MCP support isn’t new (added in 2024); the recent changes are usability and enterprise enhancements
+- Sources: Claude Code CHANGELOG and docs release notes
   - https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
   - https://docs.claude.com/en/release-notes/claude-code
+:::
 
 ---
 
