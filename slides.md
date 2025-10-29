@@ -242,25 +242,32 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 # Tool introduction: Junie {.r-fit-text data-background="images/3.png"}
 
 - Developed by [JetBrains](https://plugins.jetbrains.com/plugin/26104-jetbrains-junie-eap)
-- Proprietary tooling and requires PyCharm Subscription
-- Appears to be using Anthropic's Claude 3.7 Sonnet
+- Requires a JetBrains IDE + JetBrains AI plan (AI Pro/Ultimate); EAP plugin on Marketplace
+- Models: GPT-5 default; Claude also supported
 - Fully agentic with project navigation
 
 ::: notes
-Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
+- As of Aug 7, 2025, GPT-5 is the default model for Junie (configurable); source below in What's New notes
 :::
 
 ---
 
 # What's New in Junie {.r-fit-text data-background="images/3.png"}
 
-- **Status Update**: Now in **Public Early Access Program** (was private beta)
-- **MCP Support**: Model Context Protocol integration added
-- **Remote Development**: macOS & Linux support (not Windows yet)
-- **GitHub Integration**: "Junie on GitHub" EAP now open
-- **Platform Support**: JVM and PHP projects currently supported
-- **Multi-Model**: GPT-5 support mentioned alongside Claude
-- **Open Source Grants**: Available for open-source projects
+- **Status**: Public EAP; plugin available on Marketplace
+- **Models**: GPT-5 default in Junie; Claude also supported
+- **MCP**: Model Context Protocol support (in-IDE)
+- **Remote Dev**: macOS & Linux (Windows not yet)
+- **GitHub EAP**: Async multi-tasking from GitHub; JVM + PHP projects only (for GitHub EAP)
+- **Performance/UX**: ~30% faster in-IDE; transparent plan/log; Ask mode; Brave mode; guidelines file
+- **Grants**: 6‑month licenses for open-source projects (Junie on GitHub)
+
+::: notes
+- GPT‑5 default + how to try: https://blog.jetbrains.com/blog/2025/08/07/gpt-5-support-in-ai-assistant-junie-kineto/
+- Agentic era (MCP, Remote Dev macOS/Linux, 30% faster, GitHub EAP JVM/PHP, grants): https://blog.jetbrains.com/junie/2025/07/the-agentic-ai-era-at-jetbrains-is-here/
+- PhpStorm deep dive (guidelines, Ask mode, Brave mode, allowlist): https://blog.jetbrains.com/phpstorm/2025/06/discover-junie-for-phpstorm/
+- Junie main page / plugin: https://www.jetbrains.com/junie/ | https://plugins.jetbrains.com/plugin/26104-jetbrains-junie-eap
+:::
 
 ---
 
