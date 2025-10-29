@@ -46,6 +46,7 @@ keywords:
 - Cursor
 - Goose
 - Junie
+- OpenAI Codex
 
 
 ::: notes
@@ -54,6 +55,7 @@ keywords:
 - Cursor: Editor-integrated solution enabling real-time collaborative coding and debugging
 - Goose: Specialized in API development with strong documentation capabilities
 - Junie: JetBrain's new agentic assistant that is current in private beta
+- OpenAI Codex: OpenAI’s agentic coding suite with an open-source CLI and IDE extensions
  
  From basic code completion to full-fledged pair programmers in just one year
 :::
@@ -245,15 +247,38 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 ---
 
+# Tool introduction: OpenAI Codex {.r-fit-text data-background="images/7.png"}
+
+- Developed by [OpenAI](https://openai.com/codex/)
+- Two parts: open-source CLI (Rust) + IDE extensions (VS Code, Cursor, Windsurf)
+- Runs locally and can read/modify/run code in your repo
+- Supports MCP via Agents SDK; can be exposed as an MCP server
+- Works on macOS/Linux; Windows via WSL2
+
+---
+
+# What's New: OpenAI Codex {.r-fit-text data-background="images/7.png"}
+
+- **Codex CLI**: Local coding agent with TUI; open-source at [openai/codex](https://github.com/openai/codex)
+- **Models**: Optimized for **GPT-5-Codex**; switch with `/model` or `--model`
+- **Approval Modes**: Auto (default), Read Only, Full Access
+- **Non-interactive Mode**: `codex exec "task..."`
+- **Images as Input**: `--image` flag or paste into composer
+- **Cloud & SDK**: Delegate to Codex Cloud; Agents SDK orchestration; MCP guide
+- **Pricing**: Included with ChatGPT Plus/Pro/Team/Edu/Enterprise; or API key
+
+---
+
 # Tool Comparison {.r-fit-text data-background="images/4.png"}
 
-| Tool      | Open Source | MCP Support | Agentic | Models Supported       |
-|-----------|-------------|-------------|---------|------------------------|
-| Aider     | Yes         | No          | Semi    | Bring your own         |
-| Claude Code | No          | Yes         | Full    | Claude Models          |
-| Cursor    | No          | Yes         | Full    | OpenAI, Claude, Gemini |
-| Goose     | Yes         | Yes         | Full    | Bring your own         |
-| Junie     | No          | Yes         | Full    | Claude 3.7 + GPT-5     |
+| Tool        | Open Source | MCP Support | Agentic | Models Supported        |
+|-------------|-------------|-------------|---------|-------------------------|
+| Aider       | Yes         | No          | Semi    | Bring your own          |
+| Claude Code | No          | Yes         | Full    | Claude Models           |
+| Cursor      | No          | Yes         | Full    | OpenAI, Claude, Gemini  |
+| Goose       | Yes         | Yes         | Full    | Bring your own          |
+| Junie       | No          | Yes         | Full    | Claude 4.5 + GPT-5      |
+| Codex CLI   | Yes         | Yes         | Full    | GPT-5 / GPT-5-Codex     |
 
 ---
 
