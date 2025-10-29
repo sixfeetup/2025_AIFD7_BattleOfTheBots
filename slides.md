@@ -122,7 +122,7 @@ servers.
 
 - Developed by Paul Gauthier
 - Open-source ([GitHub: paul-gauthier/aider](https://github.com/paul-gauthier/aider))
-- Supports multiple LLM models (OpenAI GPT-4, Claude, Llama)
+- Supports multiple LLM models (OpenAI, Claude, Llama, BYOM)
 - Semi-agentic with git integration
 - No MCP support currently
 - Supports `/voice` interactions
@@ -132,16 +132,19 @@ servers.
 
 # What's New in Aider {.r-fit-text data-background="images/9.png"}
 
-**Since April 2025** (v0.28 → v0.86+, 40+ releases):
+**Since April 2025**:
 
-- **Architect Mode**: Use reasoning models (o1) + fast editor models
-- **IDE Integration**: Watch files for AI comments (`# ... AI!`)
-- **Browser Interface**: Run Aider in your web browser
-- **Advanced Testing**: Auto-lint & test after every edit
-- **GPT-5 & Claude 4** support, DeepSeek V3/R1, Grok-3/4
-- **130+ Languages**: Extended tree-sitter support
-- **Multi-model workflows**: Different models for different tasks
+- Models: GPT‑5; Claude Sonnet 4/Opus 4; Gemini 2.5; Grok‑4; DeepSeek V3/R1; Responses API (o1/o3/o4‑mini)
+- Reasoning: `/think‑tokens` and `/reasoning‑effort`; thinking tokens support and cleaner reasoning output
+- OpenRouter: OAuth sign‑in, smarter defaults, local model metadata cache, accurate pricing
+- UX/CLI: `/context`, `/editor` (alias `/edit`), shell completions, desktop notifications, faster launch/spinners
+- Git: Conventional Commits prompting, Co‑authored‑by by default, `--commit‑language`, clearer `/undo`
+- Repo & languages: +130 languages; repo‑map for Scala/OCaml/MATLAB/Clojure; better identifier ranking
+- Watcher & web: more robust file watcher (permissions/filters/Lisp comments); optional Playwright scraping
 
+::: notes
+Architect mode, IDE file watcher and the browser UI were already available before April 2025.
+:::
 ---
 
 # Tool introduction: Claude Code {.r-fit-text data-background="images/10.png"}
