@@ -164,6 +164,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - **Models**: Sonnet 4.5 default; Opus 4.1; Haiku 4.5; Sonnet‑plan + Haiku‑execute
 - **Bash/Sandbox**: Background long‑running commands; tab completion; BashTool sandbox (macOS/Linux)
 - **Skills**: Claude Skills support
+- **Hooks**: Hook Events for automation (SessionStart/End, PreToolUse/PostToolUse, Stop/SubagentStop, PreCompact, UserPromptSubmit); per‑command timeouts; systemMessage in outputs
 - **MCP**: @‑mention toggles, multi‑config files, import from Claude Desktop, OAuth discovery, SSE/HTTP w/ OAuth, enterprise allow/deny lists
 - **UI/UX**: Smoother terminal, better permission prompts, redesigned search, drag‑and‑drop, transcript shows model, `/export`
 
