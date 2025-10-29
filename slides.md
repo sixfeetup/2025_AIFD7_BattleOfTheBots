@@ -387,9 +387,16 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 # DEMO: Junie {data-background="images/10.png"}
 
-- Specify conventions in `.junie/guidelines.md`
-- Use it to help setup those guidelines
-- It will require some serious coaxing in complicated setups (like our demo)
+- Put project rules in `.junie/guidelines.md`
+- Modes: Agent (default) and Ask
+- Approvals: Brave Mode or Action Allowlist (regex)
+- Exclude with `.aiignore` when needed
+
+::: notes
+- Sources: GPT‑5 default https://blog.jetbrains.com/blog/2025/08/07/gpt-5-support-in-ai-assistant-junie-kineto/ | Agentic era https://blog.jetbrains.com/junie/2025/07/the-agentic-ai-era-at-jetbrains-is-here/ | PhpStorm deep dive (guidelines, Ask, Brave, allowlist) https://blog.jetbrains.com/phpstorm/2025/06/discover-junie-for-phpstorm/
+- Allowlist example (php artisan) via IDE settings; Brave Mode runs commands without confirmation
+- Use `.aiignore` to restrict files; review diffs and rollback if needed
+:::
 
 ---
 
