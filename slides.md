@@ -4,7 +4,7 @@ pagetitle: "Battle of the Bots: Which AI Assistant Delivers?"
 author: Calvin Hendryx-Parker, CTO, Six Feet Up
 author-meta:
     - Calvin Hendryx-Parker
-date: IndyPy 2025
+date: October 2025
 date-meta: 2025
 keywords:
     - Python
@@ -27,7 +27,7 @@ keywords:
 
 > More than 97% of respondents reported having used AI coding tools at work
 >
-> -- [Github AI in Software Survey](More than 97% of respondents reported having used AI coding tools at work at some point)
+> -- [2024 Github AI in Software Survey](https://github.blog/news-insights/research/survey-ai-wave-grows/)
 
 ---
 
@@ -54,7 +54,7 @@ keywords:
 - Claude Code: Anthropic's CLI tool with advanced context awareness and precise refactoring capabilities
 - Cursor: Editor-integrated solution enabling real-time collaborative coding and debugging
 - Goose: Specialized in API development with strong documentation capabilities
-- Junie: JetBrain's new agentic assistant that is current in private beta
+- Junie: JetBrain's new agentic assistant embedded into their IDE tools
 - OpenAI Codex: OpenAI’s agentic coding suite with an open-source CLI and IDE extensions
  
  From basic code completion to full-fledged pair programmers in just one year
@@ -100,6 +100,8 @@ servers.
   - Saves the cost of having all the AWS docs in your own context
 - Use [Playwright from your AI Tools](https://github.com/microsoft/playwright-mcp)
   - Control a browser and grab the context from various web pages
+- [Serena MCP](https://github.com/oraios/serena) Language Server
+  - Semantic code retrieval and editing tools
  
 ---
 
@@ -144,9 +146,9 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 - Developed by [Anthropic](https://www.anthropic.com/claude)
 - Proprietary model and tooling
-- Uses Claude models: Sonnet 4.5, Opus 4.1, Haiku 4.5 (via Console, Bedrock, Vertex)
+- Uses Claude models: Sonnet 4.5, Opus 4.1, Haiku 4.5
 - Fully agentic with planning, tools, and subagents
-- Supports MCP (Model Context Protocol); MCP support has been in Claude Code since 2024
+- Supports MCP (Model Context Protocol) since its inception
 - Ships as a terminal app and a native VS Code extension
 
 ---
