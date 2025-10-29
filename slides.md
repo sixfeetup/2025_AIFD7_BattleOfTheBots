@@ -132,8 +132,6 @@ servers.
 
 # What's New in Aider {.r-fit-text data-background="images/9.png"}
 
-**Since April 2025**:
-
 - Models: GPT‑5; Claude Sonnet 4/Opus 4; Gemini 2.5; Grok‑4; DeepSeek V3/R1; Responses API (o1/o3/o4‑mini)
 - Reasoning: `/think‑tokens` and `/reasoning‑effort`; thinking tokens support and cleaner reasoning output
 - OpenRouter: OAuth sign‑in, smarter defaults, local model metadata cache, accurate pricing
@@ -158,7 +156,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 ---
 
-# What's New in Claude Code (since Apr 2025) {.r-fit-text data-background="images/10.png"}
+# What's New in Claude Code {.r-fit-text data-background="images/10.png"}
 
 - **v2.0**: Native VS Code extension, `/rewind`, `/usage`, thinking toggle, Ctrl‑R history, Agent SDK rename, dynamic subagents
 - **Plugins**: Install/enable/disable/marketplace/validate; repo‑level marketplaces; `/doctor` diagnostics
@@ -190,8 +188,6 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 # What's New in Cursor {.r-fit-text data-background="images/1.png"}
 
-**Since April 2025**:
-
 - **Agent Mode**: Autonomous task planning and execution
 - **Composer Mode**: Multi-file coordinated editing
 - **Background Agent**: Long-running tasks in background
@@ -215,8 +211,6 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 ---
 
 # What's New in Goose {.r-fit-text data-background="images/2.png"}
-
-**Since April 2025** (Public launch Jan 2025):
 
 - **Desktop App**: GUI interface alongside CLI
 - **Recipe System**: Repeatable workflow automation (May 2025)
@@ -243,8 +237,6 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 ---
 
 # What's New in Junie {.r-fit-text data-background="images/3.png"}
-
-**Since April 2025**:
 
 - **Status Update**: Now in **Public Early Access Program** (was private beta)
 - **MCP Support**: Model Context Protocol integration added
