@@ -222,20 +222,19 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 # What's New in Goose {.r-fit-text data-background="images/2.png"}
 
-- **Desktop**: GUI app alongside CLI
 - **Recipes**: Repeatable workflows; cookbook generator
 - **Subagents/Subrecipes**: Parallel and structured delegation
 - **MCP‑UI**: Intent‑based UIs; auto visualizer
-- **Browser**: "Driver’s License" automation
 - **Containers**: Isolated dev envs (container‑use)
 - **Multi‑model**: Per‑task model routing
 - **Providers**: OpenRouter + Tetrate Agent Router
 - **ACP**: Agent‑Client‑Protocol editor integration
 
 ::: notes
-- Key posts: Recipes + Driver’s License + Multi‑model + Containers — https://block.github.io/goose/blog/2025/05/06/recipe-for-success | https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license | https://block.github.io/goose/blog/2025/06/16/multi-model-in-goose | https://block.github.io/goose/blog/2025/06/19/isolated-development-environments
+- Key posts: Recipes + Multi‑model + Containers — https://block.github.io/goose/blog/2025/05/06/recipe-for-success | https://block.github.io/goose/blog/2025/06/16/multi-model-in-goose | https://block.github.io/goose/blog/2025/06/19/isolated-development-environments
 - Subagents/Subrecipes + MCP‑UI auto visualiser — https://block.github.io/goose/blog/2025/09/26/subagents-vs-subrecipes | https://block.github.io/goose/blog/2025/09/15/subrecipes-in-goose | https://block.github.io/goose/blog/2025/08/27/autovisualiser-with-mcp-ui
 - Providers + ACP — https://block.github.io/goose/blog/2025/07/29/openrouter-unlocks-workshops | https://block.github.io/goose/blog/2025/08/27/get-started-for-free-with-tetrate | https://block.github.io/goose/blog/2025/10/24/intro-to-agent-client-protocol-acp
+- Demo (not a core feature): Robotics via MCP + MQTT (mbot2) — https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license
 - For granular fixes/features: Releases — https://github.com/block/goose/releases
 :::
 
