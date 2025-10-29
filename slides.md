@@ -62,26 +62,21 @@ keywords:
 
 ---
 
-# What is AI Agent? {data-background="images/4.png"}
+# What is an AI Agent? {.r-fit-text data-background="images/4.png"}
 
-An AI agent is a system that can:
+- Perceives environment via tools/APIs
+- Plans and decides autonomously
+- Takes actions toward goals (edit code, run tests, call tools)
+- Maintains context/memory within a session
+- Learns from feedback and iterates
+- Chains multi‑step operations
 
-- Perceive its environment through tools/APIs
-- Make decisions autonomously
-- Take actions to achieve specific goals
-- Learn from interactions and feedback
-- Chain multiple operations together
-
----
-
-# Agents Continued {data-background="images/4.png"}
-
-Key characteristics:
-
-- Tool use capabilities (file system, web search, code execution)
-- Planning and reasoning about complex tasks
-- Persistent memory within a session
-- Self-improvement through feedback loops
+::: notes
+- Definition: senses (tools), memory (context), planning (plan/steps), acting (tool calls)
+- Examples: code edit + run tests + git commit; fetch docs via MCP; browse with Playwright MCP
+- Safety: approval modes, sandboxed shells, read‑only vs full access; always review staged diffs
+- Limits: non‑determinism, tool auth/permissions, context windows—use rules/conventions files
+:::
 
 ---
 
