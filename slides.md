@@ -224,8 +224,8 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 - **Recipes**: Repeatable workflows; cookbook generator
 - **Subagents/Subrecipes (experimental)**: Parallel and structured delegation
-- **MCP‑UI**: Intent‑based UIs; auto visualizer
-- **Containers**: Isolated dev envs (container‑use)
+- **MCP‑UI (early)**: Intent‑based UIs; auto visualizer
+- **Containers (via MCP server)**: Dagger/container‑use integration for isolated envs
 - **Multi‑model**: Per‑task model routing
 - **Providers**: OpenRouter + Tetrate Agent Router
 - **ACP**: Agent‑Client‑Protocol editor integration
