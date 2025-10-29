@@ -231,11 +231,10 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - **ACP**: Agent‑Client‑Protocol editor integration
 
 ::: notes
-- Key posts: Recipes + Multi‑model + Containers — https://block.github.io/goose/blog/2025/05/06/recipe-for-success | https://block.github.io/goose/blog/2025/06/16/multi-model-in-goose | https://block.github.io/goose/blog/2025/06/19/isolated-development-environments
-- Subagents/Subrecipes + MCP‑UI auto visualiser — https://block.github.io/goose/blog/2025/09/26/subagents-vs-subrecipes | https://block.github.io/goose/blog/2025/09/15/subrecipes-in-goose | https://block.github.io/goose/blog/2025/08/27/autovisualiser-with-mcp-ui
-- Providers + ACP — https://block.github.io/goose/blog/2025/07/29/openrouter-unlocks-workshops | https://block.github.io/goose/blog/2025/08/27/get-started-for-free-with-tetrate | https://block.github.io/goose/blog/2025/10/24/intro-to-agent-client-protocol-acp
-- Demo (not a core feature): Robotics via MCP + MQTT (mbot2) — https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license
-- For granular fixes/features: Releases — https://github.com/block/goose/releases
+- Multi‑model (Lead/Worker): https://block.github.io/goose/docs/tutorials/lead-worker | https://block.github.io/goose/blog/2025/06/16/multi-model-in-goose
+- Recipes + Containers: https://block.github.io/goose/blog/2025/05/06/recipe-for-success | https://block.github.io/goose/blog/2025/06/19/isolated-development-environments
+- Subagents/Subrecipes (experimental) + MCP‑UI: https://block.github.io/goose/blog/2025/09/26/subagents-vs-subrecipes | https://block.github.io/goose/blog/2025/09/15/subrecipes-in-goose | https://block.github.io/goose/blog/2025/08/27/autovisualiser-with-mcp-ui
+- Providers (OpenRouter/Tetrate) + ACP: https://block.github.io/goose/blog/2025/07/29/openrouter-unlocks-workshops | https://block.github.io/goose/blog/2025/08/27/get-started-for-free-with-tetrate | https://block.github.io/goose/blog/2025/10/24/intro-to-agent-client-protocol-acp
 :::
 
 ---
