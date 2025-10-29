@@ -398,6 +398,23 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - Use `.aiignore` to restrict files; review diffs and rollback if needed
 :::
 
+
+# DEMO: OpenAI Codex {data-background="images/7.png"}
+
+- Start in your repo with the TUI: `codex`
+- Choose approval mode: Auto (default) | Read Only | Full Access
+- Switch models as needed: `/model` or `--model gpt-5-codex`
+- Run one-off tasks non-interactively: `codex exec "task…"`
+- Include screenshots/diagrams as input: `--image path/to/file.png`
+- Tip: stage and review diffs (`git add -p` + `git diff --staged`) before committing
+
+::: notes
+- Repo: https://github.com/openai/codex | Product: https://openai.com/codex/
+- Models: optimized for GPT‑5‑Codex; switch with /model or --model
+- Non‑interactive exec: `codex exec` for CI or single tasks
+- MCP/SDK: Codex works with the OpenAI Agents SDK and MCP integrations
+:::
+
 ---
 
 # Key Takeaways {.r-fit-text data-background="images/3.png"}
