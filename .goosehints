@@ -22,4 +22,5 @@ Project conventions
   - Use r-fit-text headings as in existing slides
 
 - Git
+  - Conventional Commit Message Formatting
   - Commit slide edits with concise messages
