@@ -157,15 +157,12 @@ servers.
 
 # What's New in Claude Code {.r-fit-text data-background="images/10.png"}
 
-- **v2.0**: Native VS Code extension, `/rewind`, `/usage`, thinking toggle, Ctrl‑R history, Agent SDK rename, dynamic subagents
-- **Plugins**: Install/enable/disable/marketplace/validate; repo‑level marketplaces; `/doctor` diagnostics
-- **Subagents**: Plan and Explore subagents; resume subagents; per‑subagent model selection
-- **Models**: Sonnet 4.5 default; Opus 4.1; Haiku 4.5; Sonnet‑plan + Haiku‑execute
-- **Bash/Sandbox**: Background long‑running commands; tab completion; BashTool sandbox (macOS/Linux)
-- **Skills**: Claude Skills support
-- **Hooks**: Events (SessionStart/End, Pre/PostToolUse, Stop/SubagentStop, PreCompact, UserPromptSubmit); per-command timeouts; systemMessage support
-- **MCP**: @‑mention toggles, multi‑config files, import from Claude Desktop, OAuth discovery, SSE/HTTP w/ OAuth, enterprise allow/deny lists
-- **UI/UX**: Smoother terminal, better permission prompts, redesigned search, drag‑and‑drop, transcript shows model, `/export`
+- **Models**: Sonnet 4.5 (default); Opus 4.1; Haiku 4.5
+- **CLI/VS Code**: Native extension; smoother terminal; transcript shows model; `/export`
+- **Commands**: `/rewind`; `/usage`; thinking toggle; Ctrl‑R history
+- **Plugins/Skills**: Install/enable/marketplace; `/doctor`; Claude Skills
+- **Bash/Sandbox**: Background commands; tab completion; BashTool sandbox (macOS/Linux)
+- **Hooks/MCP**: Hooks events; @‑mentions; multi‑config; OAuth discovery
 
 ::: notes
 - MCP support isn’t new (added in 2024); the recent changes are usability and enterprise enhancements
@@ -189,14 +186,12 @@ servers.
 
 # What's New in Cursor {.r-fit-text data-background="images/1.png"}
 
-- **Background Agents**: Continuous VMs, GitHub/IAM, dashboards
-- **Modes**: Agent, Ask, Plan, Custom; reviewable plans
-- **Rules**: Project/Team rules (.cursor/rules), AGENTS.md, /Generate Cursor Rules
+- **Background Agents**: Continuous VMs; GitHub/IAM; dashboards
+- **Modes**: Agent; Ask; Plan; Custom (reviewable plans)
+- **Rules**: .cursor/rules; AGENTS.md; /Generate Cursor Rules
 - **Headless/CI**: Headless CLI; GitHub Actions
 - **MCP**: Client + Extension API; directory/install
-- **Browser**: Built-in web tool
-- **Enterprise**: Admin API, Analytics v2, SSO/SCIM, spend controls
-- **Models/Max**: Max‑Mode for long‑running work
+- **Browser/Enterprise**: Built‑in browser; Admin API; Analytics; SSO/SCIM; spend controls
 
 ::: notes
 - Background Agents: docs, API, webhooks — https://cursor.com/docs/background-agent | https://cursor.com/docs/background-agent/api/overview | https://cursor.com/docs/background-agent/api/webhooks
@@ -222,12 +217,11 @@ servers.
 # What's New in Goose {.r-fit-text data-background="images/2.png"}
 
 - **Recipes**: Repeatable workflows; cookbook generator
-- **Subagents/Subrecipes (experimental)**: Parallel and structured delegation
-- **MCP‑UI (early)**: Intent‑based UIs; auto visualizer
-- **Containers (via MCP server)**: Dagger/container‑use integration for isolated envs
-- **Multi‑model (Lead/Worker)**: Planner/worker orchestration; per‑task routing
-- **Providers**: OpenRouter + Tetrate Agent Router
-- **ACP**: Agent‑Client‑Protocol editor integration
+- **Subagents/Subrecipes**: Parallel delegation (experimental)
+- **MCP‑UI**: Intent‑based UIs; auto visualizer (early)
+- **Containers**: Isolated envs via Dagger/container MCP
+- **Multi‑model**: Lead/Worker orchestration; per‑task routing
+- **Providers/ACP**: OpenRouter; Tetrate Agent Router; ACP editor integration
 
 ::: notes
 - Multi‑model (Lead/Worker): https://block.github.io/goose/docs/tutorials/lead-worker | https://block.github.io/goose/blog/2025/06/16/multi-model-in-goose
@@ -253,13 +247,12 @@ servers.
 
 # What's New in Junie {.r-fit-text data-background="images/3.png"}
 
-- **Status**: Public EAP; plugin available on Marketplace
-- **Models**: GPT-5 default in Junie; Claude also supported
-- **MCP**: Model Context Protocol support (in-IDE)
-- **Remote Dev**: macOS & Linux (Windows not yet)
-- **GitHub EAP**: Async multi-tasking from GitHub; JVM + PHP projects only (for GitHub EAP)
-- **Performance/UX**: ~30% faster in-IDE; transparent plan/log; Ask mode; Brave mode; guidelines file
-- **Grants**: 6‑month licenses for open-source projects (Junie on GitHub)
+- **Status**: Public EAP (Marketplace)
+- **Models**: GPT‑5 default; Claude supported
+- **MCP**: In‑IDE support
+- **Remote Dev**: macOS, Linux (Windows TBD)
+- **GitHub EAP**: Async multi‑tasking (JVM/PHP)
+- **Perf/UX**: ~30% faster; transparent plan/log; Ask; Brave; guidelines file
 
 ::: notes
 - GPT‑5 default + how to try: https://blog.jetbrains.com/blog/2025/08/07/gpt-5-support-in-ai-assistant-junie-kineto/
@@ -282,13 +275,12 @@ servers.
 
 # What's New: OpenAI Codex {.r-fit-text data-background="images/7.png"}
 
-- **Codex CLI**: Local coding agent with TUI; open-source at [openai/codex](https://github.com/openai/codex)
-- **Models**: Optimized for **GPT-5-Codex**; switch with `/model` or `--model`
-- **Approval Modes**: Auto (default), Read Only, Full Access
-- **Non-interactive Mode**: `codex exec "task..."`
-- **Images as Input**: `--image` flag or paste into composer
-- **Cloud & SDK**: Delegate to Codex Cloud; Agents SDK orchestration; MCP guide
-- **Pricing**: Included with ChatGPT Plus/Pro/Team/Edu/Enterprise; or API key
+- **CLI**: TUI agent; open‑source at openai/codex
+- **Models**: GPT‑5‑Codex; `/model` or `--model`
+- **Approvals**: Auto; Read Only; Full Access
+- **Exec**: `codex exec "task..."` (non‑interactive)
+- **Images**: `--image path/to/file.png`
+- **Cloud/SDK**: Delegate to cloud; Agents SDK; MCP guide
 
 ---
 
