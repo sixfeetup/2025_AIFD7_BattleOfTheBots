@@ -371,16 +371,19 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 # DEMO: Goose {data-background="images/9.png"}
 
-- Specify conventions in `.goosehints`:
+- Conventions via `.goosehints`:
   Global: `~/.config/goose/.goosehints`
-  Local: `.goosehints`
-- Session support:
-  Start a session: `goose session -n rest-api`
-  Exit a session: type exit
-  Resume session: `goose session -r rest-api`
-- Permission Modes:
-  Completely Autonomous / Manual Approval / Smart Approval / Chat Only
-- Clear context by exiting `/exit`
+  Local: `.goosehints` (local wins)
+- Sessions: `goose session -n NAME`; resume with `-r`; clear with `/clear`; exit with `/exit`
+- Permission modes: `/mode` → `auto` | `approve` | `smart_approve` | `chat`
+- Enable built-ins: `goose session --with-builtin developer` (or `/builtin developer`)
+- Optional web UI: `goose web --open`
+
+::: notes
+- Docs: CLI https://block.github.io/goose/docs/guides/goose-cli-commands | Goosehints https://block.github.io/goose/docs/guides/using-goosehints
+- Precedence: local hints override global; Goose loads AGENTS.md then .goosehints; can customize via CONTEXT_FILE_NAMES
+- Web: binds to 127.0.0.1 by default; don’t expose without securing
+:::
 
 # DEMO: Junie {data-background="images/10.png"}
 
