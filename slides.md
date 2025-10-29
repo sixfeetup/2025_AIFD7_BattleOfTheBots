@@ -184,20 +184,30 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - Proprietary editor with open-source components
 - Supports OpenAI, Anthropic, and Google models
 - Fully agentic with project navigation
-- Supports [MCP](https://docs.cursor.com/context/model-context-protocol)
+- Supports [MCP](https://cursor.com/docs/context/mcp)
 
 ---
 
-# What's New in Cursor {.r-fit-text data-background="images/1.png"}
+# What's New in Cursor since Apr 2025 {.r-fit-text data-background="images/1.png"}
 
-- **Agent Mode**: Autonomous task planning and execution
-- **Composer Mode**: Multi-file coordinated editing
-- **Background Agent**: Long-running tasks in background
-- **CLI Tools**: Headless operation, GitHub Actions integration
-- **Browser Integration**: Web automation capabilities
-- **Enhanced MCP Support**: Full Model Context Protocol integration
-- **Enterprise Features**: Teams, SSO, SCIM, Admin API, Analytics
-- Visit [changelog.cursor.sh](https://changelog.cursor.sh) for detailed updates
+- Background Agents: Run agents continuously in isolated VMs with internet access; configure dev env via `.cursor/environment.json`; GitHub integration; IAM Role support; dashboards, pricing, and security notes
+  - Docs: <https://cursor.com/docs/background-agent>, API: <https://cursor.com/docs/background-agent/api/overview>, Webhooks: <https://cursor.com/docs/background-agent/api/webhooks>
+- Agent Modes: Agent, Ask, Plan, and Custom modes with mode-specific tools; Plan mode creates reviewable implementation plans
+  - Docs: <https://cursor.com/docs/agent/modes>
+- Rules and AGENTS.md: New Project Rules in `.cursor/rules` (MDC format, auto-attach/agent-requested/manual), Team Rules (enforceable), plus simple `AGENTS.md`; generate rules from chat with `/Generate Cursor Rules`
+  - Docs: <https://cursor.com/docs/context/rules>
+- Headless + CI: Headless CLI for automations and first-class GitHub Actions integration
+  - Docs: <https://cursor.com/docs/cli/headless>, <https://cursor.com/docs/cli/github-actions>
+- MCP: Client and Extension API, directory and install links for easy setup
+  - Docs: <https://cursor.com/docs/context/mcp>, <https://cursor.com/docs/context/mcp-extension-api>, <https://cursor.com/docs/context/mcp/directory>, <https://cursor.com/docs/context/mcp/install-links>
+- Browser tool: Use a built-in browser tool for web context and automation
+  - Docs: <https://cursor.com/docs/agent/browser>
+- Enterprise: Admin API, Analytics v2, SSO/SCIM, usage & spend controls, model/integration management, compliance
+  - Docs: <https://cursor.com/docs/enterprise>, <https://cursor.com/docs/account/teams/admin-api>, <https://cursor.com/docs/account/teams/analytics-v2>, <https://cursor.com/docs/enterprise/usage-and-spend-controls>, <https://cursor.com/docs/enterprise/model-and-integration-management>, <https://cursor.com/docs/account/teams/sso>, <https://cursor.com/docs/account/teams/scim>
+- Models & Max Mode: Max-Mode compatible models for long-running/background work
+  - Docs: <https://cursor.com/docs/context/max-mode>, <https://cursor.com/docs/models>
+
+For ongoing releases: <https://www.cursor.com/changelog>
 
 ---
 
@@ -321,9 +331,9 @@ Claims to be using Claude 3 Sonnet, but the discord offical accounts say Sonnet
 
 # DEMO: Cursor {data-background="images/8.png"}
 
-- Specify conventions in Cursor Rules: ./cursor/rules
-  https://docs.cursor.com/context/rules-for-ai
-- Ask Cursor to setup a `.cursor-guildeline.json`
+- Specify conventions in Project Rules: .cursor/rules
+  https://cursor.com/docs/context/rules
+- Optionally add AGENTS.md at the project root or subdirectories; you can also generate rules via /Generate Cursor Rules
  
 
 # DEMO: Goose {data-background="images/9.png"}
