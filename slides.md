@@ -293,16 +293,20 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 ---
 
-# Tool Comparison {.r-fit-text data-background="images/4.png"}
+# Tool Comparison {data-background="images/4.png"}
 
-| Tool        | Open Source | MCP Support | Agentic | Models Supported        |
-|-------------|-------------|-------------|---------|-------------------------|
-| Aider       | Yes         | No          | Semi    | Bring your own          |
-| Claude Code | No          | Yes         | Full    | Claude Models           |
-| Cursor      | No          | Yes         | Full    | OpenAI, Claude, Gemini  |
-| Goose       | Yes         | Yes         | Full    | Bring your own          |
-| Junie       | No          | Yes         | Full    | Claude 4.5 + GPT-5      |
-| Codex CLI   | Yes         | Yes         | Full    | GPT-5 / GPT-5-Codex     |
+<div class=".scale">
+
+| Tool        | Open  | MCP   | Agentic   | Models Supported      |
+|-------------|-------|-------|-----------|-----------------------|
+| Aider       | Yes   | No    | Semi      | Bring your own        |
+| Claude Code | No    | Yes   | Full      | Claude Models         |
+| Cursor      | No    | Yes   | Full      | GPT-5, Claude, Gemini |
+| Goose       | Yes   | Yes   | Full      | Bring your own        |
+| Junie       | No    | Yes   | Full      | Claude 4.5 + GPT-5    |
+| Codex       | Yes   | Yes   | Full      | GPT-5-Codex           |
+
+</div>
 
 ---
 
@@ -310,6 +314,16 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 ![](images/aider_leaderboar.png)
 
+---
+
+# Developer Productivity AI Arena {.r-fit-text data-background="images/2.png"}
+
+![](images/dpai_arena.png)
+
+::: notes
+- https://dpaia.dev/
+- https://github.com/dpaia
+:::
 ---
 
 # DEMO: The Prompt {data-background="images/4.png"}
@@ -328,8 +342,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - Run commands and add to output with `/run`
 - Show cost with `/tokens`
 - Clear context with `/clear`
-- Start with `--lint-command` and `--test-command` run your test suite after
-  each time the AI edits your code
+- Start with `--lint-cmd` and `--test-cmd --auto-test` to run your test suite after each change
  
 # DEMO: Claude Code {data-background="images/6.png"}
 
