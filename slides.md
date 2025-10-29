@@ -130,16 +130,16 @@ servers.
 # What's New in Aider {.r-fit-text data-background="images/9.png"}
 
 - **Models**: GPT‑5, Claude 4, Gemini 2.5, Grok‑4, DeepSeek; o1/o3/o4‑mini
-- **Reasoning**: /think‑tokens; /reasoning‑effort
-- **UX/CLI**: /context; /editor (/edit); shell comps; notifications
-- **Git**: Conventional Commits; Co‑authored‑by; --commit‑language; clearer /undo
+- **Reasoning**: `/think‑tokens`; `/reasoning‑effort`
+- **UX/CLI**: `/context`; `/editor` (`/edit`); shell comps; notifications
+- **Git**: Conventional Commits; Co‑authored‑by; `--commit‑language`; clearer `/undo`
 - **Repo**: 130+ langs; better identifier ranking; repo‑map expands coverage
 - **Watcher/Web**: sturdier file watcher; optional Playwright scrape
 
 ::: notes
 - Reasoning toggles (/think‑tokens, /reasoning‑effort)
 - OpenRouter: OAuth sign‑in; cached pricing/metadata
-- UX: /context, /editor (/edit); commands/conventions docs — https://aider.chat/docs/usage/commands/ | https://aider.chat/docs/usage/conventions/
+- UX: `/context`, `/editor` (`/edit`); commands/conventions docs — https://aider.chat/docs/usage/commands/ | https://aider.chat/docs/usage/conventions/
 - Caveat: Architect mode, file watcher, browser UI existed pre‑Apr 2025
 :::
 ---
@@ -188,7 +188,7 @@ servers.
 
 - **Background Agents**: Continuous VMs; GitHub/IAM; dashboards
 - **Modes**: Agent; Ask; Plan; Custom (reviewable plans)
-- **Rules**: .cursor/rules; AGENTS.md; /Generate Cursor Rules
+- **Rules**: `.cursor/rules`; `AGENTS.md`; `/Generate Cursor Rules`
 - **Headless/CI**: Headless CLI; GitHub Actions
 - **MCP**: Client + Extension API; directory/install
 - **Browser/Enterprise**: Built‑in browser; Admin API; Analytics; SSO/SCIM; spend controls
@@ -328,7 +328,7 @@ servers.
 
 # DEMO: Aider {data-background="images/5.png"}
 
-- Specify conventions in CONVENTIONS.md
+- Specify conventions in `CONVENTIONS.md`
 - Use different models for architect and edit mode simultaneously
 - Use external editor with `/editor`
 - Run commands and add to output with `/run`
@@ -339,7 +339,7 @@ servers.
 # DEMO: Claude Code {data-background="images/6.png"}
 
 - Allow tools (e.g.): `claude config add allowedTools "Bash(git:*),Bash(cat:*),Bash(grep:*)"`
- - Specify conventions in CLAUDE.md (or via Skills/Hooks)
+- Specify conventions in `CLAUDE.md` (or via Skills/Hooks)
 - Doesn't use git to commit changes. TIP: Ask it to "Review the staged changes
   with `git diff --staged` and git commit using conventional commit standard"
 - Show usage with `/usage`
@@ -348,33 +348,22 @@ servers.
 
 # DEMO: Cursor {data-background="images/8.png"}
 
-- Define project rules in .cursor/rules (version-controlled)
-- Use AGENTS.md at the root or subdirectories for simple instructions
-- Generate rules in chat with /Generate Cursor Rules
-- Switch modes as needed: Agent, Ask, Plan (Shift+Tab), Custom
+- Define project rules in `.cursor/rules` (version-controlled)
+- Use `AGENTS.md` at the root or subdirectories for simple instructions
+- Generate rules in chat with `/Generate Cursor Rules`
+- Switch modes as needed: Agent, Ask, Plan (`Shift+Tab`), Custom
+
+::: notes
+- Define project rules in `.cursor/rules` (version-controlled)
+- Use `AGENTS.md` at the root or subdirectories for simple instructions
+- Generate rules in chat with `/Generate Cursor Rules`
+- Switch modes as needed: Agent, Ask, Plan (`Shift+Tab`), Custom
 
 ::: notes
 - Docs: Rules https://cursor.com/docs/context/rules | Modes https://cursor.com/docs/agent/modes
 - Rule precedence: Team Rules → Project Rules → User Rules
-- Legacy .cursorrules is still supported but will be deprecated
-- Plans can be saved to .cursor/plans
-:::
-
-
-# DEMO: Goose {data-background="images/9.png"}
-
-- Conventions via `.goosehints`:
-  Global: `~/.config/goose/.goosehints`
-  Local: `.goosehints` (local wins)
-- Sessions: `goose session -n NAME`; resume with `-r`; clear with `/clear`; exit with `/exit`
-- Permission modes: `/mode` → `auto` | `approve` | `smart_approve` | `chat`
-- Enable built-ins: `goose session --with-builtin developer` (or `/builtin developer`)
-- Optional web UI: `goose web --open`
-
-::: notes
-- Docs: CLI https://block.github.io/goose/docs/guides/goose-cli-commands | Goosehints https://block.github.io/goose/docs/guides/using-goosehints
-- Precedence: local hints override global; Goose loads AGENTS.md then .goosehints; can customize via CONTEXT_FILE_NAMES
-- Web: binds to 127.0.0.1 by default; don’t expose without securing
+- Legacy `.cursorrules` is still supported but will be deprecated
+- Plans can be saved to `.cursor/plans`
 :::
 
 # DEMO: Junie {data-background="images/10.png"}
