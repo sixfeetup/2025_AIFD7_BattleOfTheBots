@@ -353,12 +353,21 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 - Show usage with `/usage`
 - Rewind, compact, and clear context with `/rewind`, `/compact`, and `/clear`
 
+
 # DEMO: Cursor {data-background="images/8.png"}
 
-- Specify conventions in Project Rules: .cursor/rules
-  https://cursor.com/docs/context/rules
-- Optionally add AGENTS.md at the project root or subdirectories; you can also generate rules via /Generate Cursor Rules
- 
+- Define project rules in .cursor/rules (version-controlled)
+- Use AGENTS.md at the root or subdirectories for simple instructions
+- Generate rules in chat with /Generate Cursor Rules
+- Switch modes as needed: Agent, Ask, Plan (Shift+Tab), Custom
+
+::: notes
+- Docs: Rules https://cursor.com/docs/context/rules | Modes https://cursor.com/docs/agent/modes
+- Rule precedence: Team Rules → Project Rules → User Rules
+- Legacy .cursorrules is still supported but will be deprecated
+- Plans can be saved to .cursor/plans
+:::
+
 
 # DEMO: Goose {data-background="images/9.png"}
 
