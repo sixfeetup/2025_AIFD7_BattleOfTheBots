@@ -129,16 +129,18 @@ servers.
 
 # What's New in Aider {.r-fit-text data-background="images/9.png"}
 
-- Models: GPT‑5; Claude Sonnet 4/Opus 4; Gemini 2.5; Grok‑4; DeepSeek V3/R1; Responses API (o1/o3/o4‑mini)
-- Reasoning: `/think‑tokens` and `/reasoning‑effort`; thinking tokens support and cleaner reasoning output
-- OpenRouter: OAuth sign‑in, smarter defaults, local model metadata cache, accurate pricing
-- UX/CLI: `/context`, `/editor` (alias `/edit`), shell completions, desktop notifications, faster launch/spinners
-- Git: Conventional Commits prompting, Co‑authored‑by by default, `--commit‑language`, clearer `/undo`
-- Repo & languages: +130 languages; repo‑map for Scala/OCaml/MATLAB/Clojure; better identifier ranking
-- Watcher & web: more robust file watcher (permissions/filters/Lisp comments); optional Playwright scraping
+- **Models**: GPT‑5, Claude 4, Gemini 2.5, Grok‑4, DeepSeek; o1/o3/o4‑mini
+- **Reasoning**: /think‑tokens; /reasoning‑effort
+- **UX/CLI**: /context; /editor (/edit); shell comps; notifications
+- **Git**: Conventional Commits; Co‑authored‑by; --commit‑language; clearer /undo
+- **Repo**: 130+ langs; better identifier ranking; repo‑map expands coverage
+- **Watcher/Web**: sturdier file watcher; optional Playwright scrape
 
 ::: notes
-Architect mode, IDE file watcher and the browser UI were already available before April 2025.
+- Reasoning toggles (/think‑tokens, /reasoning‑effort)
+- OpenRouter: OAuth sign‑in; cached pricing/metadata
+- UX: /context, /editor (/edit); commands/conventions docs — https://aider.chat/docs/usage/commands/ | https://aider.chat/docs/usage/conventions/
+- Caveat: Architect mode, file watcher, browser UI existed pre‑Apr 2025
 :::
 ---
 
@@ -318,6 +320,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 ![](images/dpai_arena.png)
 
 ::: notes
+- Launched Oct 28th 2025 (yesterday!)
 - https://dpaia.dev/
 - https://github.com/dpaia
 :::
