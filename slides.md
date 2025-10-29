@@ -223,7 +223,7 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 # What's New in Goose {.r-fit-text data-background="images/2.png"}
 
 - **Recipes**: Repeatable workflows; cookbook generator
-- **Subagents/Subrecipes**: Parallel and structured delegation
+- **Subagents/Subrecipes (experimental)**: Parallel and structured delegation
 - **MCP‑UI**: Intent‑based UIs; auto visualizer
 - **Containers**: Isolated dev envs (container‑use)
 - **Multi‑model**: Per‑task model routing
