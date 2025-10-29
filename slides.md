@@ -151,24 +151,29 @@ Architect mode, IDE file watcher and the browser UI were already available befor
 
 - Developed by [Anthropic](https://www.anthropic.com/claude)
 - Proprietary model and tooling
-- Uses only Claude models (Claude 3 Opus/Sonnet/Haiku)
-- Fully agentic with reasoning capabilities
-- Supports MCP (Model Context Protocol)
+- Uses Claude models: Sonnet 4.5, Opus 4.1, Haiku 4.5 (via Console, Bedrock, Vertex)
+- Fully agentic with planning, tools, and subagents
+- Supports MCP (Model Context Protocol); MCP support has been in Claude Code since 2024
+- Ships as a terminal app and a native VS Code extension
 
 ---
 
-# What's New in Claude Code & MCP {.r-fit-text data-background="images/10.png"}
+# What's New in Claude Code (since Apr 2025) {.r-fit-text data-background="images/10.png"}
 
-**Major Development Since April 2025**:
+- 2.0 Release (Sept 2025): native VS Code extension, `/rewind` to undo code changes, `/usage` for plan limits, toggle thinking, Ctrl‑R history search, Agent SDK rename, dynamic subagents
+- Plugins (2.0.12): extensibility system with marketplaces; `/plugin install|enable|disable|marketplace|validate`; repo‑level marketplace config; `/doctor` diagnostics
+- Subagents & Planning (2.0.17, 2.0.28): Plan subagent; Explore subagent for fast code search; resume subagents; choose models per subagent
+- Models: default Sonnet 4.5, Opus 4.1 upgrade, Haiku 4.5 added; Sonnet‑plan + Haiku‑execute combo
+- Bash & Sandbox: background long‑running commands; tab completion; sandbox mode for BashTool on macOS/Linux
+- Skills: support for Claude Skills (2.0.20)
+- MCP enhancements: enable/disable servers by @‑mention; multiple mcp config files; import from Claude Desktop; OAuth discovery; remote SSE/HTTP with OAuth; structuredContent and resource_link support; enterprise allow/deny lists
+- UI/UX: buttery‑smooth terminal renderer; improved permission prompts; redesigned search tool; drag‑and‑drop files; transcript shows model; `/export` for sharing
 
-- **Model Context Protocol (MCP)** - Open standard (Nov 2024)
-- **Claude 3.7 & 4.0 Sonnet** - Latest model versions
-- **MCP Servers**: Google Drive, Slack, GitHub, Postgres, Puppeteer
-- **Claude Desktop**: Local MCP server support
-- **Ecosystem Adoption**: Zed, Replit, Codeium, Sourcegraph
-- **Enterprise MCP** (coming): Remote production servers
-
-**Note**: Claude Code is an Anthropic coding agent tool and supports MCP
+Notes
+- MCP support in Claude Code is not new (introduced in 2024); recent updates focus on usability and enterprise features
+- Sources: Official changelog and docs
+  - https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
+  - https://docs.claude.com/en/release-notes/claude-code
 
 ---
 
