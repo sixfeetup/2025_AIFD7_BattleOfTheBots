@@ -346,12 +346,12 @@ Architect mode, IDE file watcher and the browser UI were already available befor
  
 # DEMO: Claude Code {data-background="images/6.png"}
 
-- Allow tools: `claude config add allowedTools "Bash(git:*),Bash(cat:*),Bash(grep:*)"`
+- Allow tools (e.g.): `claude config add allowedTools "Bash(git:*),Bash(cat:*),Bash(grep:*)"`
 - Specify conventions in CLAUDE.md
 - Doesn't use git to commit changes. TIP: Ask it to "Review the staged changes
   with `git diff --staged` and git commit using conventional commit standard"
-- Show cost with `/cost`
-- Compact and clear context with `/compact` and `/clear`
+- Show usage with `/usage`
+- Rewind, compact, and clear context with `/rewind`, `/compact`, and `/clear`
 
 # DEMO: Cursor {data-background="images/8.png"}
 
